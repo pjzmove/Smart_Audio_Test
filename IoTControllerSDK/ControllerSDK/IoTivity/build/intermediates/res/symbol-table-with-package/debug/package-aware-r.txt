@@ -1,2 +1,0 @@
-org.iotivity.base
-string app_name
