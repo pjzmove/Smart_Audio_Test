@@ -1,0 +1,50 @@
+/*
+ * *************************************************************************************************
+ * * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.              *
+ * *************************************************************************************************
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 25
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'int', 'SECURED', SECURED
+
+        ndk {
+          abiFilters 'armeabi-v7a'
+        }
+
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_CPP_FEATURES=rtti exceptions"
+            }
+
+        }
+    }
+
+    sourceSets {
+        main {
+            main.java.srcDirs += ['../../iotivity/java/iotivity-android/src/main/java']
+            main.java.srcDirs += ['../../iotivity/java/common/src/main/java']
+            jniLibs.srcDirs += ['../../iotivity/java/iotivity-android/build/native-libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

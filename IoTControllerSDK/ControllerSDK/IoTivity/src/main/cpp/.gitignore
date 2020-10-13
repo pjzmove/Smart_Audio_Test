@@ -1,0 +1,8 @@
+**/.DS_Store
+.DS_Store
+!extlibs/
+extlibs/*
+!extlibs/CMakeLists.txt
+native-libs
+native-libs/*
+

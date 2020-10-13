@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/jeff/tmp/qualcomm-sap-android-src-1-2_qtil_oem.git/qsap_android/IoTControllerSDK/iotivity/java/iotivity-android/src/main/assets"/></dataSet><dataSet config="release"><source path="/home/jeff/tmp/qualcomm-sap-android-src-1-2_qtil_oem.git/qsap_android/IoTControllerSDK/iotivity/java/iotivity-android/src/release/assets"/></dataSet></merger>
