@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/custom_dialog_background">
+
+	<EditText
+		android:id="@+id/custom_dialog_edit_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/edit_text_side_margin"
+		android:layout_marginRight="@dimen/edit_text_side_margin"
+		style="@style/DialogEditText"
+		android:theme="@style/DialogEditText"
+		tools:hint="Edit Text"/>
+
+	<CheckBox
+		android:id="@+id/custom_dialog_show_password_checkbox"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/edit_text_side_margin"
+		android:text="@string/credential_show_password"
+		android:paddingLeft="@dimen/edit_text_password_checkbox_padding"
+		style="@style/DialogShowPasswordCheckbox"
+		android:button="@drawable/checkmark"
+		android:visibility="gone"
+		tools:visibility="visible"/>
+</LinearLayout>

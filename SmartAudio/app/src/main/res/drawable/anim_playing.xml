@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="false">
+	<item android:drawable="@drawable/playing_animation_01" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_02" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_03" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_04" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_05" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_06" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_07" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_08" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_09" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_10" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_11" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_12" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_13" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_14" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_15" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_16" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_17" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_18" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_19" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_20" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_21" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_22" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_23" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_24" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_25" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_26" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_27" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_28" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_29" android:duration="47" />
+	<item android:drawable="@drawable/playing_animation_30" android:duration="47" />
+</animation-list>

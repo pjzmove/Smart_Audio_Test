@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="?attr/actionBarSize"
+	android:background="@color/app_bar_background"
+	android:orientation="horizontal">
+
+	<ImageButton
+		android:id="@+id/firmware_update_app_bar_close_button"
+		android:layout_width="?attr/actionBarSize"
+		android:layout_height="match_parent"
+		android:src="@drawable/btn_close_actionbar"
+		android:background="@color/app_bar_background"
+		android:scaleType="center"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/firmware_update_app_bar_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		style="@style/AppBarTextView"
+		android:gravity="center"/>
+
+<!--	<smartaudio.view.CustomFontTextView
+		android:id="@+id/firmware_update_app_bar_update_all_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		style="@style/AppBarTextView"
+		android:gravity="right"
+		android:text="@string/update_all"/>-->
+
+</LinearLayout>

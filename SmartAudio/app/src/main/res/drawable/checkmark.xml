@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:state_checked="false" android:state_pressed="false"
+		android:drawable="@drawable/ic_checkmark_empty_normal" />
+  <item
+		android:state_checked="false" android:state_pressed="true"
+		android:drawable="@drawable/ic_checkmark_empty_pressed" />
+	<item
+		android:state_checked="true" android:state_pressed="false"
+		android:drawable="@drawable/ic_checkmark_checked_normal" />
+  <item
+		android:state_checked="true" android:state_pressed="true"
+		android:drawable="@drawable/ic_checkmark_checked_pressed" />
+</selector>

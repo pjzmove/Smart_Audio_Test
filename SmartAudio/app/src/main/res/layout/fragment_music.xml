@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:sothree="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/slider_panel_now_playing_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="bottom"
+	sothree:umanoPanelHeight="@dimen/slider_panel_height"
+	sothree:umanoShadowHeight="@dimen/slider_panel_shadow_height"
+	sothree:umanoParallaxOffset="@dimen/slider_panel_parallax_offset"
+	sothree:umanoDragView="@+id/slider_panel_mini_now_playing_layout">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/browse_background">
+
+		<include layout="@layout/app_bar_browse" />
+		<FrameLayout
+			android:id="@+id/main_music_frame"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</FrameLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:clickable="true"
+		android:focusable="false">
+
+		<include layout="@layout/slider_panel_mini_now_playing" />
+
+		<include layout="@layout/app_bar_music_playing" />
+
+		<FrameLayout
+			android:id="@+id/music_frame"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

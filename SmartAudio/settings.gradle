@@ -1,0 +1,11 @@
+/*
+ * *************************************************************************************************
+ * * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.              *
+ * *************************************************************************************************
+ */
+
+include ':app'
+include ':IoTControllerSDK'
+project(':IoTControllerSDK').projectDir = new File("../IoTControllerSDK/ControllerSDK/IoTControllerSDK")
+include ':IoTivity'
+project(':IoTivity').projectDir = new File("../IoTControllerSDK/ControllerSDK/IoTivity")

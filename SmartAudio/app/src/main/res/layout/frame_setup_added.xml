@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/setup_added_root_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/setup_fragment_background">
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_great_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="@style/SetupAddedFragmentGreatText"
+		android:gravity="center"
+		android:layout_centerVertical="true"
+		tools:text="Great!"/>
+
+	<ImageView
+		android:id="@+id/setup_added_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/setup_great_text"
+		android:layout_marginBottom="@dimen/setup_added_fragment_great_to_icon_height"
+		android:layout_centerHorizontal="true"
+		tools:src="@drawable/ic_success"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_added_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/setup_text_width_padding"
+		android:paddingRight="@dimen/setup_text_width_padding"
+		android:singleLine="false"
+		android:gravity="center"
+		android:layout_marginTop="@dimen/setup_added_fragment_great_to_text_height"
+		android:layout_below="@+id/setup_great_text"
+		style="@style/SetupAddedFragmentRegularAddedText"
+		tools:text="text"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_added_subtext_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/setup_text_width_padding"
+		android:paddingRight="@dimen/setup_text_width_padding"
+		android:singleLine="false"
+		android:gravity="center"
+		android:layout_marginTop="@dimen/setup_added_fragment_text_to_subtext_height"
+		android:layout_below="@+id/setup_added_text"
+		style="@style/SetupAddedFragmentRegularAddedText"
+		android:visibility="gone"
+		tools:visibility="visible"
+		tools:text="sub-text"/>
+
+</RelativeLayout>

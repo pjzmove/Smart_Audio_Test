@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**********************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                   *
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.           *
+  ~  **********************************************************************************************/
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/app_bar_background"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/app_bar_back_button"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:background="@color/app_bar_background"
+        android:scaleType="center"
+        android:src="@drawable/btn_back"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            android:id="@+id/app_bar_text"
+            style="@style/AppBarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/app_bar_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/app_bar_search_horizontal_margin"
+            android:layout_marginStart="@dimen/app_bar_search_horizontal_margin"
+            android:background="@drawable/bgd_search_edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/app_bar_search_text"
+                style="@style/SearchEditText"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/app_bar_search_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/app_bar_search_horizontal_margin"
+                android:layout_marginStart="@dimen/app_bar_search_horizontal_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bgd_search_edit_text"
+                android:drawablePadding="@dimen/app_bar_search_text_drawable_padding"
+                android:drawableStart="@drawable/ic_searchbar"
+                android:hint="@string/search_hint"
+                android:paddingEnd="@dimen/app_bar_search_right_padding"
+                android:paddingStart="@dimen/app_bar_search_left_padding"
+                android:theme="@style/SearchEditText"
+                android:contentDescription="@string/cont_desc_search_edit_text"/>
+
+            <ImageButton
+                android:id="@+id/app_bar_search_clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_bar_search_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bgd_search_edit_text"
+                android:paddingEnd="@dimen/app_bar_search_clear_right_padding"
+                android:scaleType="center"
+                android:src="@drawable/btn_search_clear"
+                android:contentDescription="@string/cont_desc_search_clear"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontButton
+        android:id="@+id/app_bar_button"
+        style="@style/AppBarCancelButton"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/app_bar_text_button_margin"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/app_bar_search_button"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:background="@color/app_bar_background"
+        android:scaleType="center"
+        android:src="@drawable/btn_search"
+        android:visibility="visible"
+        android:contentDescription="@string/cont_desc_search_content"/>
+
+    <Button
+        android:id="@+id/action_button"
+        style="@style/AppBarCancelButton"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:text="@string/save"
+        android:visibility="gone"
+        android:contentDescription="@string/cont_desc_save"/>
+
+    <ProgressBar
+        android:id="@+id/progress_status_bar"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"/>
+
+</LinearLayout>

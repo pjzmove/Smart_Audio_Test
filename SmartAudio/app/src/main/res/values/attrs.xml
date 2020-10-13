@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+	<declare-styleable name="CustomFont">
+		<attr name="qfont" format="string"/>
+	</declare-styleable>
+
+	<declare-styleable name="Step">
+		<attr name="stepText" format="string"/>
+	</declare-styleable>
+
+    <declare-styleable name="BottomMenuItem">
+        <attr name="itemText" format="string"/>
+        <attr name="itemIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="BottomMenuToggleItem">
+        <attr name="toggleItemText" format="string"/>
+        <attr name="toggleLeadingIcon" format="reference"/>
+        <attr name="toggled" format="boolean"/>
+    </declare-styleable>
+</resources>

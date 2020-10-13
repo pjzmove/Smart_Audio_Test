@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+  	android:background="@color/setup_fragment_background">
+
+	<ListView
+		android:id="@+id/about_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/setup_list_fragment_background"/>
+
+</LinearLayout>

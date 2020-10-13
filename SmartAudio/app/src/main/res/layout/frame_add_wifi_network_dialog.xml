@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/custom_dialog_background">
+
+	<TextView
+		android:id="@+id/addwifi_ssid_header_text"
+		style="@style/AddWifiHeaderText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/edit_text_side_margin"
+		android:layout_marginRight="@dimen/edit_text_side_margin"
+		android:layout_marginTop="@dimen/edit_text_side_margin"
+		android:text="@string/addwifi_ssid_header"/>
+
+	<EditText
+		android:id="@+id/addwifi_ssid_edittext"
+		style="@style/DialogEditText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/edit_text_side_margin"
+		android:hint="@string/addwifi_ssid_hint"
+		android:maxLength="32">
+	</EditText>
+
+	<TextView
+		android:id="@+id/addwifi_ssid_security_header_text"
+		style="@style/AddWifiHeaderText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/edit_text_side_margin"
+		android:layout_marginTop="@dimen/edit_text_side_margin"
+		android:layout_marginRight="@dimen/edit_text_side_margin"
+		android:text="@string/addwifi_ssid_security_header"/>
+
+	<Spinner
+		android:id="@+id/credential_ssid_security_spinner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/edit_text_side_margin">
+	</Spinner>
+
+	<TextView
+		android:id="@+id/addwifi_password_header_text"
+		style="@style/AddWifiHeaderText"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/edit_text_side_margin"
+		android:text="@string/addwifi_password_header"/>
+
+	<include layout="@layout/frame_edit_text_dialog" />
+
+</LinearLayout>

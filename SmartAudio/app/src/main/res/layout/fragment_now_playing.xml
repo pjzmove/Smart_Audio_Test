@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/now_playing_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/empty_view"/>
+
+    <LinearLayout
+        android:id="@+id/now_playing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_top_view_weight"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_album_art_layout_weight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/now_playing_album_art_bottom_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/now_playing_album_art"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_album_art_default_large"/>
+            </LinearLayout>
+
+            <com.qualcomm.qti.smartaudio.view.TrackSeekBar
+                android:id="@+id/now_playing_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:maxHeight="@dimen/now_playing_seekbar_height"
+                android:minHeight="@dimen/now_playing_seekbar_height"
+                android:paddingEnd="@dimen/now_playing_seekbar_padding"
+                android:paddingStart="@dimen/now_playing_seekbar_padding"
+                android:progressDrawable="@drawable/seekbar_now_playing"
+                android:splitTrack="false"
+                android:thumb="@drawable/thumb_seekbar_now_playing"
+                android:thumbOffset="@dimen/now_playing_seekbar_thumb_offset"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_between_album_and_track_view_weight"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            android:id="@+id/now_playing_track_text"
+            style="@style/NowPlayingTrackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/vertical_margin"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:layout_weight="@dimen/now_playing_track_weight"
+            android:gravity="center|top"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            android:id="@+id/now_playing_artist_text"
+            style="@style/NowPlayingArtistTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/vertical_margin"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:layout_weight="@dimen/now_playing_artist_weight"
+            android:gravity="center|top"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            android:id="@+id/now_playing_album_text"
+            style="@style/NowPlayingAlbumTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/vertical_margin"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:layout_weight="@dimen/now_playing_album_weight"
+            android:gravity="center|top"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_between_text_and_top_control_view_weight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_top_control_layout_weight"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_left_view_weight"/>
+
+            <com.qualcomm.qti.smartaudio.view.FavoriteButton
+                android:id="@+id/now_playing_favorite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_button_weight"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/btn_favorite"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_side_control_view_weight"/>
+
+            <ImageButton
+                android:id="@+id/now_playing_skip_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_button_weight"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cont_desc_play_previous"
+                android:src="@drawable/btn_skip_back"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_play_view_weight"/>
+
+            <com.qualcomm.qti.smartaudio.view.NowPlayingPlayPauseButton
+                android:id="@+id/now_playing_play_pause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_button_weight"
+                android:background="@android:color/transparent"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_play_view_weight"/>
+
+            <ImageButton
+                android:id="@+id/now_playing_skip_forward"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_button_weight"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cont_desc_play_next"
+                android:src="@drawable/btn_skip_forward"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_side_control_view_weight"/>
+
+            <ImageButton
+                android:id="@+id/now_playing_volume_settings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_button_weight"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cont_desc_playing_volume_settings"
+                android:src="@drawable/btn_volume_settings"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_top_control_right_view_weight"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_between_top_and_volume_control_view_weight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_volume_control_layout_weight"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_volume_control_left_view_weight"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_volume_control_view_weight"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_volume_low"/>
+
+                <SeekBar
+                    android:id="@+id/now_playing_volume_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:maxHeight="@dimen/now_playing_volume_seekbar_height"
+                    android:minHeight="@dimen/now_playing_volume_seekbar_height"
+                    android:progressDrawable="@drawable/seekbar_volume_light"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/thumb_seekbar_volume_light"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_volume_high"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_volume_control_right_view_weight"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_between_bottom_and_volume_control_view_weight"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_bottom_control_layout_weight"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_bottom_control_view_weight"/>
+
+            <com.qualcomm.qti.smartaudio.view.LoopModeButton
+                android:id="@+id/now_playing_repeat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_repeat_weight"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cont_desc_playing_repeat_none"
+                android:scaleType="center"
+                android:src="@drawable/btn_repeat"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_bottom_control_between_view_weight"/>
+
+            <com.qualcomm.qti.smartaudio.view.ShuffleModeButton
+                android:id="@+id/now_playing_shuffle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_shuffle_weight"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cont_desc_playing_shuffle_off"
+                android:scaleType="center"
+                android:src="@drawable/btn_shuffle"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@dimen/now_playing_bottom_control_view_weight"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/now_playing_bottom_view_weight"/>
+
+    </LinearLayout>
+
+</LinearLayout>

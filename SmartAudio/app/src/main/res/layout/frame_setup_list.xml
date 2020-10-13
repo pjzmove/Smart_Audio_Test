@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/setup_fragment_background"
+	android:orientation="vertical">
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_instruction_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/setup_text_width_padding"
+		android:paddingRight="@dimen/setup_text_width_padding"
+		android:paddingBottom="@dimen/setup_text_height_padding"
+		android:paddingTop="@dimen/setup_text_height_padding"
+		android:singleLine="false"
+		style="@style/SetupInstructionFragmentInstructionText" />
+
+	<ListView
+		android:id="@+id/setup_listview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@color/setup_list_fragment_background"
+		android:visibility="gone"
+		android:dividerHeight="@dimen/settings_activity_list_view_divider_height"/>
+
+	<ExpandableListView
+		android:id="@+id/setup_expand_listview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@color/setup_list_fragment_background"
+		android:groupIndicator="@null"
+		android:dividerHeight="@dimen/settings_activity_list_view_divider_height"/>
+
+	<FrameLayout
+		android:id="@+id/setup_empty_text_frame"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:visibility="gone"/>
+
+</LinearLayout>

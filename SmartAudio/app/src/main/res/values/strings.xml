@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+    <string name="app_name">Smart Audio</string>
+    <string name="app_short_name">Smart Audio</string>
+    <string name="app_full_name">Qualcomm Smart Audio Platform Mobile App for Android</string>
+    <string name="app_name_launch_screen">QCS40X\n Smart Audio</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="done">DONE</string>
+    <string name="loading">LOADING&#8230;</string>
+
+    <string name="unknown_upper_case">UNKNOWN</string>
+    <string name="unknown_artist">Unknown Artist</string>
+    <string name="unknown_album">Unknown Album</string>
+
+    <string name="devices_in_group">Devices in Group</string>
+    <string name="empty">EMPTY</string>
+    <string name="no_music">NO MUSIC</string>
+    <string name="no_source_list">No Source Selection</string>
+    <string name="name_group_title">Group Name</string>
+    <string name="editor_group_hint">Group Name</string>
+    <string name="button_group_add_remove">ADD/REMOVE</string>
+
+    <!-- Terms of Service -->
+    <string name="view_term">VIEW TERMS</string>
+    <string name="accept">ACCEPT</string>
+    <string name="term_of_service_title">TERMS OF SERVICE</string>
+    <string name="term_of_service_content">PLEASE NOTE:\n\nBY USING THIS RELEASE YOU ACCEPT THAT IT IS SUBJECT TO THE PRODUCT KIT LICENSE AGREEMENT THAT YOU HAVE ACCEPTED ELECTRONICALLY, A COPY OF WHICH IS AVAILABLE AT\n\nhttps://createpoint.qti.qualcomm.com/dashboard/pkla/license</string>
+    <string name="please_accept">PLEASE ACCEPT OUR TERMS OF SERVICE</string>
+
+    <!-- Custom Dialog -->
+    <string name="converting_saved_playlists">CONVERTING SAVED PLAYLISTS&#8230;</string>
+    <string name="searching_for_speakers">Searching Speakers&#8230;</string>
+    <string name="searching_for_configed_speakers">Searching configured Satellite Speakers&#8230;</string>
+    <string name="please_wait">PLEASE WAIT&#8230;</string>
+    <string name="no_wifi_connect_title">No WI-FI CONNECTION</string>
+    <string name="no_wifi_connect_message">Please check that Wi-Fi is enabled in your device\'s settings and that it is currently connected to a Wi-Fi network.\n\nWaiting for Wi-Fi to become available.</string>
+
+    <!-- Nav Drawer -->
+    <string name="wifi_setup">SETUP</string>
+    <string name="avs_setup">AVS</string>
+    <string name="setup_detail">Add a new speaker</string>
+    <string name="settings">SETTINGS</string>
+    <string name="settings_detail">Manage your speaker\'s settings</string>
+    <string name="services">SERVICES</string>
+    <string name="services_details">AllPlay compatible music apps</string>
+    <string name="about">ABOUT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="wifi_onboarding">Wi-Fi Onboarding</string>
+
+    <string name="avs_on_boarding_title">AVS On Boarding</string>
+    <string name="avs_on_boarding_web_view_title">AVS On Boarding Web View</string>
+    <string name="avs_on_boarded">AVS on boarded</string>
+    <string name="avs_sign_out_title">Sign Out? </string>
+    <string name="avs_sign_out_confirmation">"Are you sure you want to remove your AVS login information from this device?</string>
+    <string name="avs_sign_out_alert_title">Reboot Required</string>
+    <string name="avs_sign_out_alert_message">Please reboot your device to complete the sign out process.</string>
+
+    <string name="iot_sys_device_list">IoT Sys Device List:</string>
+    <string name="avs_sign_in">Sign in with Amazon</string>
+    <string name="avs_intro">Your device includes access to Alexa.\nConnect your Amazon account to access personalized features.</string>
+    <string name="avs_details">Alexa allows you to use your voice to play music and get news, sports scores, weather and more—all hands-free.\nAll you have to do is ask Alexa.</string>
+
+    <!-- Manage Zones -->
+    <string name="my_zones">MY ZONES</string>
+    <string name="setup_zones">Set Up Zones</string>
+    <string name="manage_zones">Manage Zones</string>
+    <string name="no_zones_title">NO ZONES HAVE BEEN CREATED</string>
+    <string name="no_zones_details">Zones let you save speakers and music together so you can quickly get your favorite music player where you want it.</string>
+
+    <!-- Entire Network tree view Fragment -->
+    <string name="network_tree_view">Network View</string>
+
+    <!-- Speaker Fragment -->
+    <string name="main_view_bar_title">HOME</string>
+    <string name="what_is_playing">What\'s Playing</string>
+    <string name="available_speakers">Available Speakers</string>
+    <string name="speakers">Speakers</string>
+    <string name="plus_more">&#160;+ %1$d more</string>
+    <string name="pause_all">Pause All</string>
+    <string name="empty_list_text">No speaker found</string>
+    <string name="empty_list_detail_text">Make sure your speakers are plugged in and within Wi-Fi range.</string>
+    <string name="scanning">Scanning&#160;</string>
+    <string name="manually_scan">Scan manually</string>
+
+    <!-- Mini Player -->
+    <string name='now_playing'>NOW PLAYING</string>
+
+    <!-- Grouping -->
+    <string name="play_on">PLAY ON:</string>
+
+    <!-- Music Browse -->
+    <string name="music">Music</string>
+    <string name="play_all">play All</string>
+    <string name="play_all_number">Play All (%1$d)</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="genres">Genres</string>
+    <string name="playlists">Playlists</string>
+    <string name="songs">Songs</string>
+    <string name="one_album">1 Album</string>
+    <string name="number_of_albums">%1$d Albums</string>
+    <string name="one_song">1 Song</string>
+    <string name="number_of_songs">%1$d Songs</string>
+    <string name="play_now">Play Now</string>
+    <string name="play_next">Play Next</string>
+    <string name="queue_title">QUEUE</string>
+    <string name="add_to_queue">Add to Queue</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="add_to_playlist">Add to Playlist</string>
+    <string name="save_as_playlist">Save as Playlist</string>
+    <string name="clear_queue">Clear Queue</string>
+    <string name="remove_from_queue">Remove from Queue</string>
+    <string name="edit_playlist_name">Edit Playlist Name</string>
+    <string name="clear_playlist">Clear Playlist</string>
+    <string name="delete_playlist">Delete Playlist</string>
+    <string name="remove_from_playlist">Remove from Playlist</string>
+    <string name="clear_queue_upper">Clear Queue</string>
+    <string name="save">SAVE</string>
+    <string name="clear">Clear</string>
+    <string name="edit">Edit</string>
+    <string name="search_hint">Search for music on my device</string>
+    <string name="no_search_results">No results found</string>
+    <string name="edit_playlist_name_hint">New Playlist name</string>
+    <string name="other_playlists">Other Playlists</string>
+    <string name="input_source_selection">Input Sources</string>
+    <string name="output_source_selection">Available Output Destinations</string>
+    <string name="online_media_services_screen">Online Music Services</string>
+
+    <string name="other_audio_sources">Other Audio Sources</string>
+    <string name="aux_line_in">Aux / Line In</string>
+    <string name="local_media_server">Local Media Server (DLNA)</string>
+    <string name="online_media_server">Online Music Services</string>
+    <string name="no_music_in_folder">You have no supported music files in this folder</string>
+    <string name="no_music_in_device">You have no supported music files in this device</string>
+    <string name="no_music_in_playlist">You have no supported music files in this playlist</string>
+    <string name="no_playlist">You do not have any saved playlist</string>
+
+    <!-- Bottom sheets -->
+    <string name="bottom_sheet_header">HOME</string>
+    <string name="create_speaker_group">Create a group with other speakers</string>
+    <string name="create_device_group">Create a group with other devices</string>
+    <string name="edit_device_group">Edit device group</string>
+    <string name="pair_bt_device">Pair Bluetooth device</string>
+    <string name="manage_bt_devices">Manage Bluetooth devices</string>
+    <string name="add_zigbee_device">Add a ZigBee device</string>
+    <string name="manage_zigbee_device">Manage ZigBee devices</string>
+    <string name="view_alphabetically">View alphabetically</string>
+    <string name="view_by_type">View by type</string>
+    <string name="view_network_map">View network map</string>
+    <string name="view_about_page">About</string>
+    <string name="view_settings_page">Settings</string>
+
+    <!-- Settings Activity -->
+    <string name="speaker_settings">Settings</string>
+    <string name="firmware_update">Firmware Update</string>
+    <string name="update_available">Update Available</string>
+    <string name="general">General</string>
+    <string name="general_reset">Reset AllPlay SmartAudio</string>
+    <string name="voice_control_setting">Voice Control</string>
+    <string name="zigbee_setting">Zigbee settings</string>
+    <string name="audio_setting">Audio settings</string>
+    <string name="settings_bluetooth_title">Bluetooth</string>
+    <string name="settings_bluetooth_devices">Bluetooth devices</string>
+
+    <!-- Voice Settings -->
+    <string name="voice_control_setting_microphone">Microphone</string>
+    <string name="voice_control_qcs40x_voice">QCS40X Voice</string>
+    <string name="voice_control_avs">Amazon Alexa</string>
+    <string name="voice_control_google_assistant">Google Assistant</string>
+    <string name="voice_control_microsoft">Microsoft Cortana</string>
+    <string name="voice_control_setting_default">Default voice service</string>
+    <string name="voice_ui_available_state">Enabled, listening...</string>
+    <string name="voice_ui_enabled">Enabled, not onboarded</string>
+    <string name="voice_ui_disabled">Disabled</string>
+    <string name="voice_ui_not_linked">Not linked</string>
+    <string name="voice_ui_avs_settings_title">AVS Settings</string>
+    <string name="avs_setting_enabled">Amazon Alexa</string>
+    <string name="avs_voice_setting_hot_word">"Alexa" hotword detection</string>
+    <string name="avs_voice_setting_country">Country</string>
+    <string name="avs_voice_setting_sign_out">Sign out</string>
+
+    <!-- Audio Settings -->
+    <string name="audio_control_mode">Audio mode</string>
+    <string name="audio_control_treatment">Audio treatment</string>
+    <string name="audio_control_gapless_playback">Gapless playback</string>
+    <string name="audio_control_dolby">Dolby</string>
+    <string name="audio_control_dolby_mode">Mode(Tap to change)</string>
+    <string name="audio_control_dts">DTS VirtualX</string>
+    <string name="audio_control_dts_mode">Mode(Tap to change)</string>
+    <string name="audio_control_dialog_clarity">Dialog Clarity</string>
+    <string name="audio_control_bass_boost">Bass boost</string>
+    <string name="audio_control_equalizer">Equalizer</string>
+    <string name="audio_control_reverb">Reverb</string>
+    <string name="audio_control_reverb_preset">Preset</string>
+    <string name="audio_control_trumpet">Trumpet Effect</string>
+    <string name="audio_control_trumpet_virtualization">Trumpet Virtualization</string>
+    <string name="audio_control_trumpet_preset">Trumpet Preset</string>
+    <string name="audio_control_trumpet_gain">Trumpet Gain</string>
+    <string name="audio_control_normalize">Normalize volumes</string>
+    <string name="audio_control_lip_sync_delay">Lip sync delay</string>
+    <string name="audio_control_bass">Bass</string>
+    <string name="audio_control_midranges">Midrange</string>
+    <string name="audio_control_treble">Treble</string>
+
+    <!-- Bluetooth Settings -->
+    <string name="bluetooth_settings_title">Bluetooth devices</string>
+    <string name="bluetooth_settings_bluetooth">Bluetooth</string>
+    <string name="bluetooth_settings_discoverable">Discoverable</string>
+    <string name="bluetooth_settings_discoverable_description">Make device visible for up to 60 seconds</string>
+    <string name="bluetooth_settings_paired_devices">Paired devices</string>
+    <string name="bluetooth_settings_pair_device">+ Pair Bluetooth device</string>
+    <string name="bluetooth_paired_device_menu_disconnect">Disconnect</string>
+    <string name="bluetooth_paired_device_menu_connect">Connect</string>
+    <string name="bluetooth_paired_device_menu_unpair">Unpair</string>
+    <string name="bluetooth_device_state_connected">Connected</string>
+    <string name="bluetooth_error_title">Bluetooth error</string>
+    <string name="bluetooth_error_message_with_device">The following error occurred with the Bluetooth device %1$s: %2$s
+         .</string>
+    <string name="bluetooth_error_message_without_device">The following error occurred: %1$s.</string>
+    <string name="bluetooth_request_failed_title">Request failed</string>
+    <string name="bluetooth_request_failed_message">The request has failed for an unknown reason, please try again
+         later.</string>
+    <string name="toast_bluetooth_request_failed">The request failed</string>
+    <string name="toast_bluetooth_request_time_out">Request has timed out after 30s</string>
+    <string name="toast_bluetooth_set_adapter_state_failed">The Bluetooth state could not be changed</string>
+    <string name="toast_bluetooth_set_connection_state_failed">The connection state could not be changed</string>
+    <string name="toast_bluetooth_set_discoverable_state_failed">The discoverable state could not be changed</string>
+    <string name="toast_bluetooth_unpairing_failed">Unpairing the device failed</string>
+    <string name="bluetooth_empty_list_title">Looking for Bluetooth devices</string>
+    <string name="bluetooth_empty_list_details">This may take up to 30 seconds.\n\nMake sure your new devices
+         are powered on and in discovery or pairing mode.</string>
+
+    <!-- Bluetooth onboarding -->
+    <string name="bluetooth_add_device">Add Bluetooth device</string>
+    <string name="bluetooth_devices_found">Devices found</string>
+    <string name="bluetooth_pairing">Pairing…</string>
+    <string name="bluetooth_paired">Paired with device %1$s</string>
+    <string name="bluetooth_scan_error_title">Scan request failed</string>
+    <string name="bluetooth_scan_error_message">The Bluetooth scan could not be started.</string>
+    <string name="bluetooth_device_not_found_error_message">The selected Bluetooth device could not be found.</string>
+    <string name="bluetooth_pairing_failed_message">The pairing failed with the device %1$s</string>
+    <string name="bluetooth_off_error_message">The Bluetooth is off on the IoT device.</string>
+    <string name="bluetooth_iot_device_error_message">The IoT device cannot be found.</string>
+
+    <!--Zig Bee -->
+    <string name="zigbee_setting_title">ZigBee settings</string>
+    <string name="zigbee_onboarding_title">ZigBee Onboarding</string>
+    <string name="zigbee_onboarding_formation_status_text">Setting up your coordinator, this may take a few seconds, please do not unplug your speaker.</string>
+    <string name="zigbee_onboarding_join_status_text">Looking for ZigBee devices, this may take up to 30 seconds,
+        make sure your new devices are powered on and in pairing or discovery mode.</string>
+    <string name="zigbee_enable">ZigBee</string>
+    <string name="zigbee_unknown_device">Unknown Device</string>
+    <string name="zigbee_coordinator_setting">Coordinator</string>
+    <string name="zigbee_paired_devices_setting">Paired devices (Tap to rename)</string>
+    <string name="zigbee_add_zigbee_devices">Add ZigBee Devices</string>
+    <string name="zigbee_formation_request_error_message">Post formation request failed!</string>
+    <string name="zigbee_joining_request_error_message">Post joining request failed!</string>
+    <string name="zigbee_formation_error_message">Could not set smart home coordinator.</string>
+    <string name="zigbee_check_joining_dialog_title">Check Joining state</string>
+    <string name="zigbee_check_joining_coordinator_message">You may only have one coordinator per network. You will need to reset the other coordinator before nominating another.</string>
+    <string name="zigbee_check_joining_not_coordinator_message">This device will serve as the central hub that
+        connects to all your smarthome devices.\nYou may only have one ZigBee coordinator per network.</string>
+    <string name="zigbee_error_no_device_found">The device was not found, make sure your speaker is in the network. </string>
+
+
+    <string name="network">Network</string>
+    <string name="firmware">Firmware</string>
+    <string name="restrict_playback">Restrict Playback</string>
+    <string name="restart_reset">Restart/Reset</string>
+
+    <string name="speaker_name">Device Name</string>
+    <string name="clear_music_queue">Clear Music Queue</string>
+    <string name="settings_add_surrounds">Add Surrounds</string>
+    <string name="settings_add_subwoofer">Add Subwoofer</string>
+    <string name="settings_remove_surrounds">Remove Surrounds</string>
+    <string name="settings_remove_subwoofer">Remove Subwoofer</string>
+    <string name="settings_adjust_audio">Adjust Audio</string>
+    <string name="battery">Battery</string>
+    <string name="ac_power">Using AC Power</string>
+    <string name="wireless_network">Wireless Network</string>
+    <string name="wired_network">Wired Network</string>
+    <string name="wired_network_name">Ethernet</string>
+    <string name="signal_strength">Signal Strength</string>
+    <string name="ip_address">IP Address</string>
+    <string name="mac_address">MAC Address</string>
+    <string name="current_version">Current Version</string>
+    <string name="update_automatically">Update Automatically</string>
+    <string name="check_updates">Check for updates now</string>
+    <string name="password_protection">Password Protection</string>
+    <string name="restart">Restart this device</string>
+    <string name="settings_restart">RESTART</string>
+    <string name="restart_message">Restart \"%1$s\"</string>
+    <string name="settings_restart_device_progress_title">Restarting...</string>
+    <string name="settings_factor_reset_progress_title">Resetting...</string>
+    <string name="settings_reset">RESET</string>
+    <string name="reset_message">Reset \"%1$s\" to factory default settings?\n\nYou will have to set up \"%1$s\" as a
+        new speaker before AllPlay SmartAudio will recognize it.</string>
+    <string name="restart_device_error_title">Reset Player Error</string>
+    <string name="restart_device_error_message">We were unable to restart \"%1$s\".</string>
+    <string name="factory_reset">Factory reset this device</string>
+    <string name="factory_reset_device_error_title">Reset Player Error</string>
+    <string name="factory_reset_device_error_message">Unable to reset \"%1$s\" to factory defaults.</string>
+    <string name="settings_password_title">ENTER PASSWORD</string>
+    <string name="progress_password">Please Wait...</string>
+    <string name="settings_password_turn_off_error_title">Remove Password Error</string>
+    <string name="settings_password_turn_off_error_message">Unable to remove password for \"%1$s\".</string>
+    <string name="password_dialog_error_empty_password">Please enter a password.</string>
+    <string name="password_dialog_error_mismatch_password">The passwords do not match.</string>
+    <string name="password_dialog_error_invalid_password">Invalid password, please enter a different one.</string>
+    <string name="settings_reset_title">Reset AllPlay SmartAudio</string>
+    <string name="settings_reset_message">This will reset all options and clear the cache.</string>
+    <string name="settings_reset_dialog">Resetting&#8230;</string>
+
+    <!-- Firmware Update -->
+    <string name="firmware_update_title">Firmware updates may take several minutes. During the update, your speaker will be unavailable and may disappear from this list until restarted.</string>
+    <string name="firmware_update_updated_sub_text">Firmware is up to date.</string>
+    <string name="firmware_update_new_firmware_sub_text">New Firmware available. Tap to update.</string>
+    <string name="firmware_update_physical_reboot_required">Unplug the player, wait 20 seconds, and plug it back in</string>
+    <string name="firmware_update_low_battery">New firmware available,\nplease recharge your battery to update</string>
+    <string name="firmware_update_in_progress_message">Update In Progress&#8230;</string>
+    <string name="update">Update</string>
+    <string name="firmware_update_available_title">Firmware Update Available</string>
+    <string name="firmware_update_available_message">A new version of AllPlay firmware is available %1s. An update will take several minutes. Your speaker may become unavailable until it is restarted.\n\nWould you like to update now?</string>
+    <string name="firmware_message_title">Firmware updates are available for:</string>
+    <string name="firmware_update_available_left_surround_message">your left surround</string>
+    <string name="firmware_update_available_right_surround_message">your right surround</string>
+    <string name="firmware_update_available_surrounds_title_message">Firmware updates are available for: </string>
+    <string name="firmware_update_available_surrounds_message">Firmware updates take several minutes. Your speaker may become unavailable until it is restarted.\n\nWould you like to update now?</string>
+    <string name="firmware_update_not_available_message">No updates are available.</string>
+    <string name="update_all">Update All</string>
+    <string name="progress_firmware_update">Updating...</string>
+    <string name="firmware_checking">Checking for updates</string>
+
+    <!-- Now Playing -->
+    <string name="empty_now_playing_detail">No music is currently playing.</string>
+
+    <!-- About -->
+    <string name="legal_notices">Legal Notices</string>
+    <string name="legal_notices_upper">LEGAL NOTICES</string>
+    <string name="terms_of_service_upper">TERMS OF SERVICE</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="about_info">%1$s\nVersion %2$s\nRevision %3$s\nIoTivity version %4$s\n©2018 Qualcomm Technologies, Inc.\nA Qualcomm Company.\nAll rights reserved.</string>
+
+    <!-- Music Services -->
+    <string name="online_music_services">ONLINE MUSIC SERVICES</string>
+    <string name="doubletwist">doubleTwist</string>
+    <string name="airaudio">AirAudio</string>
+    <string name="allplay_radio">AllPlay Radio</string>
+    <string name="napster">Napster</string>
+    <string name="darfm">DAR.fm</string>
+    <string name="aupeo">AUPEO!</string>
+    <string name="kt_genie">KT Genie</string>
+    <string name="recochoku">Recochoku</string>
+    <string name="spotify">Spotify</string>
+
+    <!-- Queue -->
+    <string name="empty_queue">Your queue is currently empty.</string>
+    <string name="clear_queue_message">Are you sure you want to remove all songs from this queue?</string>
+    <string name="save_playlist">SAVE PLAYLIST</string>
+    <string name="need_storage_permission">NEED STORAGE PERMISSION</string>
+    <string name="enable_storage_permission">Please go to Android Settings and enable \"Storage\" permission.</string>
+    <string name="warning">WARNING</string>
+    <string name="non_local_content_message">This playlist contains tracks that are not locally stored on this device.  Tracks that are not available for playback will be skipped.</string>
+    <string name="save_playlist_hint">Enter your playlist name</string>
+    <string name="playlist_name_exists">PLAYLIST NAME EXISTS</string>
+    <string name="playlist_name_exists_message">\"%1$s\" already exists. Do you want to replace it?</string>
+    <string name="replace">REPLACE</string>
+
+    <!-- Volume Control -->
+    <string name="zone_volume_title">ADJUST VOLUME LEVELS</string>
+    <string name="player_volume">%1$s  %2$d</string>
+    <string name="percentage_symbol">%</string>
+    <string name="master">MASTER</string>
+    <string name="player_detail_volume_control">Volume %1$d%2$s</string>
+    <string name="group_detail_volume_control">Group Volume %1$d%2$s</string>
+
+    <string name="not_now">NOT NOW</string>
+    <string name="button_connect">CONNECT</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="button_set">SET</string>
+    <string name="refresh">REFRESH</string>
+
+    <string name="searching_for_new_speakers">Searching for new speakers</string>
+    <string name="connecting">Connecting</string>
+    <string name="on_boarding_dialog_title">Boarding a speaker</string>
+    <string name="connecting_parametrised">Connecting to %1$s</string>
+    <string name="connecting_message_connection_to_network">Connecting \"%1$s\" to \"%2$s\".</string>
+
+    <string name="new_speakers">NEW SPEAKERS</string>
+    <string name="unable_to_find_allplay_speakers_header">WE CAN\'T FIND ANY ALLPLAY SPEAKERS</string>
+    <string name="unable_to_find_allplay_speakers_message">Make sure your speakers are plugged in, within Wi-Fi range, and in setup mode. Consult your user manual, if necessary.\n\nScanning...</string>
+    <string name="choose_new_speaker">Choose a speaker to set up</string>
+    <string name="new_speaker_list_footer">Speaker names may not make sense here. You will be able to set a more
+		friendly name once the device is set up.</string>
+    <string name="open_settings">OPEN SETTINGS</string>
+    <string name="next">NEXT</string>
+    <string name="incompatible_speaker">INCOMPATIBLE SPEAKER</string>
+
+    <string name="choose_wifi_network">Choose a Wi-Fi Network</string>
+    <string name="recommended_wifi">RECOMMENDED</string>
+    <string name="other_wifi">OTHER WI-FI NETWORKS</string>
+    <string name="password_title">ENTER PASSWORD FOR %1$s</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="security_not_supported">Not available. %1$s security is not supported.</string>
+    <string name="choose_wifi_list_footer">In some cases, choosing a non-recommended Wi-Fi network may make it difficult to confirm proper setup. To verify, you may need to connect your phone manually to that Wi-Fi network.</string>
+    <string name="add_wifi">Add Wi-Fi network</string>
+    <string name="add_wifi_network_title">ADD WI-FI NETWORK</string>
+    <string name="security_open">OPEN</string>
+    <string name="security_wep">WEP</string>
+    <string name="security_wpa">WPA PSK</string>
+    <string name="security_wpa2">WPA2</string>
+    <string name="security_wps">WPS</string>
+    <string name="security_password">SECURE</string>
+    <string name="credential_show_password">Show password</string>
+    <string name="wifi_on_boarding_step_sending_credentials">Sending credentials</string>
+    <string name="wifi_on_boarding_step_connecting">Connecting</string>
+    <string name="wifi_on_boarding_step_check_connection_status">Check connection status</string>
+    <string name="wifi_on_boarding_step_join">Joining the network</string>
+    <string name="wifi_on_boarding_step_disconnection">Gateway disconnection</string>
+
+    <string name="addwifi_ssid_header">NETWORK SSID</string>
+    <string name="addwifi_ssid_hint">Enter SSID</string>
+    <string name="addwifi_ssid_security_header">SECURITY</string>
+    <string name="addwifi_password_header">NETWORK PASSWORD</string>
+    <string name="credential_hint_password">Password</string>
+
+    <string name="name_speaker">NAME YOUR SPEAKER</string>
+    <string name="setting_display_name_error_message">However, we\'re not able to change the name rigth now. You can change the name later in the Settings area after you exit setup.</string>
+    <string name="predefined_speaker_name_living_room">Living Room</string>
+    <string name="predefined_speaker_name_bedroom">Bedroom</string>
+    <string name="predefined_speaker_name_kitchen">Kitchen</string>
+    <string name="predefined_speaker_name_office">Office</string>
+    <string name="predefined_speaker_name_patio">Patio</string>
+    <string name="predefined_speaker_name_den">Den</string>
+    <string name="predefined_speaker_name_custom_name">Add a custom name&#8230;</string>
+    <string name="custom_name_title">Name this device </string>
+    <string name="custom_name_hint">Device Name</string>
+
+    <string name="speaker_added">SPEAKER ADDED!</string>
+    <string name="exit_setup">EXIT SETUP</string>
+    <string name="add_another_speaker">ADD ANOTHER SPEAKER</string>
+    <string name="success">SUCCESS</string>
+    <string name="added_speaker_message">The speaker is ready to play music!</string>
+    <string name="your_speaker">Your speaker</string>
+    <string name="name_not_set_message">The name of the speaker can be set later in the Settings area
+        once exiting this setup.</string>
+    <string name="connect_error_title">Connection Failed</string>
+    <string name="connect_error_message">Please restart your speaker and try again.</string>
+    <string name="connect_error_message_not_an_open_network">The selection is not an open network.</string>
+    <string name="connect_error_message_forget_network">The selection belongs to the system or another application.
+		Please access to the device settings and "FORGET" the network. Once done, come back into
+		the application and try again to on board it.</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="button_continue">CONTINUE</string>
+    <string name="button_exit_setup">EXIT SETUP</string>
+    <string name="scanning_fail_title">Scanning failed</string>
+    <string name="scanning_fail_message">Initiating the scan has failed for one the following reasons:\n
+		- Due to too many requests, the system has temporarily blocked the app for scanning.\n
+		- Scanning is disabled.\n
+		- The hardware has reported a scan failure.\n
+	Check the state of your Android device and try again later.</string>
+    <string name="disconnect_error_title">Speaker is offline</string>
+    <string name="disconnect_error_message">Please check connections and try again later.</string>
+    <string name="poor_link_title">Poor link</string>
+    <string name="poor_link_message">The device is connected but the connection is poor, do you want to
+        continue?</string>
+    <string name="incompatible_speaker_message">This speaker is not compatible with this setup method.\n\nTo set up
+        this speaker, please connect your phone to a temporary wireless network created by AllPlay.\n\n1. Open your phone\'s settings and select Wi-Fi.\n\n2. Choose the AllPlay network.\n\n3. Follow the instructions on the screen that appears.\n\n4. Return to this app and press \"Next\" to continue.</string>
+    <string name="password_error_title">Incorrect password</string>
+    <string name="password_error_message">Incorrect password for %1$s</string>
+    <string name="connection_error_title">CONNECTION ERROR</string>
+    <string name="connection_error_message">The new speaker could not connect to the selected Wi-Fi network.\n\nPlease choose another Wi-Fi network.</string>
+    <string name="connect_error_view_available_wifi_button">View Available Wi-Fi Networks</string>
+    <string name="connect_to_network_error_message">Device is unable to connect to the Wi-Fi network. Please exit setup and connect to network manually. You can change the device name later in the Settings area after you exit setup.</string>
+    <string name="communication_error_title">Communication with speaker failed</string>
+    <string name="communication_error_message">We\'re having trouble communicating with your speaker right now.\n\nIf we can\'t restore communication after serveral times, you may need to reboot your speaker.</string>
+    <string name="network_unreachable_error_title">Network not found</string>
+    <string name="network_unreachable_error_message">Could not find the network %1$s</string>
+    <string name="searching_for_networks">Searching for WiFi networks</string>
+    <string name="request_error_title">Request failed</string>
+    <string name="request_error_message">Unable to join network %1$s.\nThe HTTP request "%2$s" failed.</string>
+    <string name="on_boarding_error_poor_link_message">Boarding the speaker "%1$s" failed due to a poor
+        connection.</string>
+    <string name="on_boarding_request_error_message">Unable to join the network.\nThe
+        HTTP request "%1$s" failed due to %2$s.</string>
+    <string name="request_error_reason_malformed_response">a malformed response</string>
+    <string name="request_error_reason_over_max_attempts">the request has failed after %d attempts over a time period of
+        %ds</string>
+    <string name="request_error_reason_time_out">the request has timed out after %ds</string>
+    <string name="request_error_reason_unsuccessful_http_status_code">an unsuccessful HTTP status (%1$d)</string>
+    <string name="request_error_reason_unknown">an unknown reason</string>
+    <string name="request_error_reason_request_failed">an internal issue to send a HTTP request</string>
+    <string name="request_error_reason_process_failed">the app not able to process a response from the speaker</string>
+    <string name="on_boarding_error_wifi_connection_message">The app cannot connect to the WiFi network of the
+        speaker "%1$s" in order to board it.</string>
+    <string name="on_boarding_error_status">status: \"%1$s\" (%2$d)</string>
+    <string name="on_boarding_verify_connecting_failure">The connection to the network failed.</string>
+    <string name="on_boarding_verify_connecting_failure_connecting">The device is still in "CONNECTING" state after
+        60s - device\'s internal time out is 40s.</string>
+    <string name="on_boarding_connection_error">The speaker is unable to connect to the network.</string>
+    <string name="on_boarding_wps_failed">The speaker was unable to connect to the network using WPS.</string>
+    <string name="on_boarding_unknown_error">Boarding the speaker with the given network was unsuccessful..\nIf we
+        can\'t restore communication after several times, you may need to reboot your speaker.</string>
+    <string name="network_list_error_poor_link_title">Poor connection to speaker</string>
+    <string name="network_list_error_poor_link_message">Unable to get the Wifi networks available for the speaker
+        %1$s.\nThe request failed due to a poor connection to the speaker.</string>
+    <string name="network_list_error_wifi_connection_title">Unable to connect to speaker.</string>
+    <string name="network_list_error_wifi_connection_message">Unable to get the Wifi networks available for the speaker
+        %1$s.\nThe request failed due the app unable to connect to the speaker.</string>
+    <string name="networks_list_request_error_title">Request failed</string>
+    <string name="networks_list_request_error_message">Unable to get the available WiFi networks for the speaker
+        %1$s. \nThe HTTP request failed due to %2$s.</string>
+    <string name="networks_list_unknown_error_title">Request failed</string>
+    <string name="networks_list_unknown_error_message">Unable to get the Wifi networks available for the speaker
+        %1$s.\nIf we can\'t restore communication after several times, you may need to reboot
+        your speaker.</string>
+
+
+    <string name="play_sound_note">Make sure the volume controls on your speaker are loud enough to hear sound.</string>
+    <string name="play_sound_header">Your speaker has been connected to your network and is playing sound.</string>
+    <string name="speaker_found">Speaker Found!</string>
+    <string name="disconnecting">Disconnecting</string>
+
+    <!-- soundbar/multichannel/MRSB -->
+    <string name="setup_surround_title">Surround system</string>
+    <string name="setup_surround_item_subwoofer">Subwoofer</string>
+    <string name="setup_surround_item_left_right_surrounds">Left and right surrounds</string>
+    <string name="setup_surround_item_advanced_options">Advanced Options</string>
+    <string name="setup_surround_item_additional_surrounds">Additional Surrounds</string>
+    <string name="setup_surround_item_adjust_audio_level">Adjust surround audio levels</string>
+    <string name="setup_surround_item_left_right_rear_surrounds">Left and right rear surrounds</string>
+    <string name="setup_surround_item_left_right_upfiring_surrounds">Left and right upfiring surrounds</string>
+    <string name="setup_surround_item_left_right_rear_upfiring_surrounds">Left and right rear upfiring surrounds</string>
+    <string name="setup_surround_item_left_right_rear_surrounds_detail">For a 7.1 system</string>
+    <string name="setup_surround_item_left_right_upfiring_surrounds_detail">For a 5.1.2 or 7.1.4 system</string>
+    <string name="setup_surround_item_left_right_rear_upfiring_surrounds_detail">For a 5.1.4 or 7.1.4 system</string>
+    <string name="setup_surround_text">Complete your surround system by choosing the speakers you want to pair with your soundbar.</string>
+    <string name="setup_surround_listview_title">COMPLETE YOUR 5.1 SYSTEM</string>
+    <string name="add_subwoofer">ADD SUBWOOFER</string>
+    <string name="add_surrounds">ADD SURROUNDS</string>
+    <string name="new_allplay_subwoofer">NEW ALLPLAY SUBWOOFERS</string>
+    <string name="subwoofer_added">SUBWOOFER ADDED</string>
+    <string name="add_left_surround">ADD LEFT SURROUND</string>
+    <string name="add_right_surround">ADD RIGHT SURROUND</string>
+    <string name="add_left_rear_surround">ADD LEFT REAR SURROUND</string>
+    <string name="add_right_rear_surround">ADD RIGHT REAR SURROUND</string>
+    <string name="add_left_upfiring_surround">ADD LEFT UPFIRING SURROUND</string>
+    <string name="add_right_upfiring_surround">ADD RIGHT UPFIRING SURROUND</string>
+    <string name="add_left_rear_upfiring_surround">ADD LEFT REAR UPFIRING SURROUND</string>
+    <string name="add_right_rear_upfiring_surround">ADD RIGHT REAR UPFIRING SURROUND</string>
+
+    <string name="left_surround_added">LEFT SURROUND ADDED</string>
+    <string name="right_surround_added">RIGHT SURROUND ADDED</string>
+    <string name="adjust_audio">ADJUST AUDIO</string>
+    <string name="dash_more_info">&#160;- MORE INFO</string>
+    <string name="setup_complete">SETUP COMPLETE</string>
+    <string name="previous_surround_settings_title">PREVIOUS SURROUND SETTINGS FOUND</string>
+    <string name="previous_settings">PREVIOUS SETTINGS</string>
+    <string name="default_settings">DEFAULT SETTINGS</string>
+    <string name="adding_subwoofer">ADDING SUBWOOFER&#8230;</string>
+    <string name="adding_left_surround">ADDING LEFT SURROUND&#8230;</string>
+    <string name="adding_right_surround">ADDING RIGHT SURROUND&#8230;</string>
+    <string name="adding_left_rear_surround">ADDING LEFT REAR SURROUND&#8230;</string>
+    <string name="adding_right_rear_surround">ADDING RIGHT REAR SURROUND&#8230;</string>
+    <string name="adding_left_upfiring_surround">ADDING LEFT UPFIRING SURROUND&#8230;</string>
+    <string name="adding_right_upfiring_surround">ADDING RIGHT UPFIRING SURROUND&#8230;</string>
+    <string name="adding_left_rear_upfiring_surround">ADDING LEFT REAR UPFIRING SURROUND&#8230;</string>
+    <string name="adding_right_rear_upfiring_surround">ADDING RIGHT REAR UPFIRING SURROUND&#8230;</string>
+    <string name="speakers_on_your_network">SATELLITE SPEAKERS ON YOUR NETWORK</string>
+    <string name="to_continue">CONTINUE</string>
+
+    <string name="subwoofer_volume">SUBWOOFER - %1$d</string>
+    <string name="left_surround_volume">LEFT SURROUND - %1$d</string>
+    <string name="right_surround_volume">RIGHT SURROUND - %1$d</string>
+    <string name="surround_system_volume">SURROUND SYSTEM - %1$d</string>
+    <string name="removing_group">REMOVING GROUP&#8230;</string>
+    <string name="using_default_settings">USING DEFAULT SETTINGS&#8230;</string>
+    <string name="set_volume_levels">SET VOLUME LEVELS</string>
+    <string name="progress_removing_surrounds">Removing Surrounds...</string>
+    <string name="progress_removing_subwoofer">Removing Subwoofer...</string>
+    <string name="ls">LS</string>
+    <string name="rs">RS</string>
+    <string name="sub">SUB</string>
+
+    <string name="connection_lost_title">CONNECTION LOST</string>
+    <string name="connection_lost_message">We\'ve lost the connection to your soundbar. Please confirm that your soundbar is plugged in and within range of your router.</string>
+    <string name="connection_lost_retried_message">We can\'t connect to your soundbar. You may need to perform a factory reset. Consult your user manual, if necessary.\n\nAfter re-adding your soundbar to your network, add your subwoofers or surrounds.</string>
+
+    <string name="surrounds_not_added_title">SURROUNDS NOT ADDED</string>
+    <string name="surrounds_not_added_message">Surrounds must be added in left and right pairs.\n\nTap TRY AGAIN to add a right surround.\n\nIf you EXIT SETUP now, no surrounds will be added to your soundbar.</string>
+
+    <string name="communication_problem_title">COMMUNICATION PROBLEM</string>
+    <string name="communication_problem_message">We’re having trouble communicating with your speaker right now.\n\nIf we can’t restore communication after several tries, you may need to reboot your speaker.</string>
+
+    <string name="connect_ethernet_detail">When adding additional home theater components, such as a subwoofer or surrounds, your soundbar must be connected to your network via an ethernet cable.\n\nPlease connect your soundbar to your router with an ethernet cable.</string>
+    <string name="add_subwoofer_detail">Place your subwoofer near a wall or in a corner of your room and turn it on.</string>
+    <string name="add_surrounds_detail">Place your left and right surrounds where you would like and make sure they are on.</string>
+    <string name="add_surrounds_rear_detail">Place your left and right rear surrounds where you would like and make sure they are on.</string>
+    <string name="add_surrounds_upfiring_detail">Place your left and right upfiring surrounds where you would like and make sure they are on.</string>
+    <string name="add_surrounds_rear_upfiring_detail">Place your left and right rear upfiring surrounds where you would like and make sure they are on.</string>
+    <string name="choose_subwoofer">Choose a subwoofer to set up.</string>
+    <string name="choose_left_surround">Choose your left surround.</string>
+    <string name="choose_right_surround">Choose your right surround.</string>
+    <string name="choose_left_rear_surround">Choose your left rear surround.</string>
+    <string name="choose_right_rear_surround">Choose your right rear surround.</string>
+    <string name="choose_left_upfiring_surround">Choose your left upfiring surround.</string>
+    <string name="choose_right_upfiring_surround">Choose your right upfiring surround.</string>
+    <string name="choose_left_rear_upfiring_surround">Choose your left rear upfiring_ surround.</string>
+    <string name="choose_right_rear_upfiring_surround">Choose your right rear upfiring_ surround.</string>
+    <string name="subwoofer">Subwoofer</string>
+    <string name="left_surround">Left Surround</string>
+    <string name="right_surround">Right Surround</string>
+
+    <string name="channel_not_found">The following %1$s cannot be found on the network:&#160;</string>
+    <string name="do_you_want_to_continue">\n\nDo you want to continue?</string>
+    <string name="channel_speaker">speaker</string>
+    <string name="channel_speakers">speakers</string>
+
+    <string name="unable_to_find_allplay_subwoofers_header">WE CAN\'T FIND ANY ALLPLAY SUBWOOFERS</string>
+    <string name="unable_to_find_allplay_subwoofers_message">Please confirm your subwoofer are on and within Wi-Fi range.\n\nScanning...</string>
+
+    <string name="left_surround_added_detail">Your left surround has been added to the&#160;</string>
+    <string name="right_surround_added_detail">Your right surround has been added to the&#160;</string>
+    <string name="subwoofer_added_detail">Your subwoofer has been added to the&#160;</string>
+    <string name="end_soundbar_detail">&#160;soundbar.</string>
+    <string name="adjust_audio_instruction">Let\'s optimize your surround system audio so it will sound as good as it can.\n\nSit where you normally sit while listening to your surround system.</string>
+    <string name="adjust_audio_complete">Your surround system audio has been adjusted to match your preferences.</string>
+    <string name="previous_surround_settings_message">Would you like to use the audio settings from last time or reset to default settings?</string>
+
+    <string name="set_volume_level_instruction">Adjust the volume of each speaker until they sound about equal. When your surround system sounds good, tap NEXT.</string>
+    <string name="more_info">&#160;&#160;More info&#8230;</string>
+
+    <string name="remove_group">Your surround system is part of a group. To adjust audio settings while playing the test sound, we must disconnect it from the group.</string>
+    <string name="uninterruptible_soundbar">Your soundbar does not allow automatic input switching from the current source. If you would like to play the test sound, please change the input on your soundbar manually.</string>
+
+    <string name="test_sound_loop">Test sound loop</string>
+    <string name="more_info_instruction">Adjust the volume of each speaker until your ears determine they are providing an equal amount of sound.\n\nUsually,
+left and right surrounds should be at a matching volume level. However, if your surrounds are at different distances from your primary
+sitting location, or if you are mixing different models of speakers, you may want to adjust them independently until they sound about the same.\n\nTIP:
+For more realism, avoid making your surround speakers and subwoofer too loud. Surround speakers and subwoofers are not intended to overwhelm you with sound. Their
+purpose is to immerse you in sound by providing background and creating a sense of environment</string>
+    <string name="remove_error_dialog_message">There was an error communicating with the player.</string>
+    <string name="remove_error_dialog_title">Error</string>
+
+    <!-- GROUPS -->
+    <string name="choosing_group_name_title">Available voice-supported group names</string>
+    <plurals name="group_name">
+        <item quantity="zero">%1$s : %2$d DEVICE</item>
+        <item quantity="one">%1$s : %2$d DEVICE</item>
+        <item quantity="other">%1$s : %2$d DEVICES</item>
+    </plurals>
+    <string name="delete_group">Delete the Group</string>
+    <string name="delete_group_message">Are you sure you want to delete the group?</string>
+    <string name="delete_button_text">DELETE</string>
+    <string name="cancel_button_text">CANCEL</string>
+
+    <!-- Fragment Title -->
+    <string name="device_detail_fragment_title">Device Details</string>
+    <string name="main_browse_fragment_title">Audio source selection</string>
+    <string name="group_fragment_title">Device Group</string>
+
+    <!-- Device Detail Title -->
+    <string name="device_detail_audio_source">Available Audio Sources</string>
+    <string name="device_detail_surround_system">Surround System</string>
+    <string name="device_detail_surround_system_detail">7.1.4</string>
+    <string name="device_detail_delete_group">Delete Group</string>
+    <string name="device_detail_rename_group">Rename Group</string>
+
+    <!-- Name Group -->
+    <string name="group_tile">Create group</string>
+    <string name="name_group_default_name">Use default name</string>
+    <string name="name_group_custom_name">Use custom name</string>
+    <string name="delete_this_group">DELETE THIS GROUP</string>
+    <string name="custom_group_title">Custom group name</string>
+    <string name="custom_group_name_hint">Note: You will not be able to control this group with your voice if it has a custom name.</string>
+    <string name="menu_save_group">SAVE</string>
+    <string name="rename_group_dialog_title">Rename group</string>
+    <string name="rename_group_dialog_message">Do you want to rename the group?</string>
+    <string name="rename_button_text">Rename</string>
+
+    <string name="on_this_device">On this device</string>
+    <string name="ungrouped">Ungrouped</string>
+    <string name="group_with_other_speakers">Group with other speakers</string>
+</resources>

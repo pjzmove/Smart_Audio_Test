@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <include layout="@layout/app_bar_settings"/>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_gravity="center|center_vertical|center_horizontal">
+
+			<ProgressBar
+        android:id="@+id/zigbee_onboarding_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:indeterminateDrawable="@drawable/anim_progress_indeterminate"/>
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:id="@+id/zigbee_onboarding_progress_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="30dp"
+				android:gravity="center"
+				style="@style/EmptyViewDetailTextView"/>
+	</LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

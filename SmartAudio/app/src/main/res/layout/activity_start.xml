@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***********************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                    *
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.            *
+  ~  ***********************************************************************************************/
+  -->
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgd_start">
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/launch_screen_app_title"
+        style="@style/NavHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/app_name_launch_screen"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/launch_screen_title_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/start_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/launch_screen_version"
+        style="@style/NavHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/current_version"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/launch_screen_version_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/launch_screen_app_title"/>
+
+    <LinearLayout
+        android:id="@+id/start_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            style="@style/TOSInstructionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tos_text_to_button_spacing"
+            android:gravity="center_horizontal"
+            android:text="@string/please_accept"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontButton
+            android:id="@+id/tos_accept_terms_button"
+            style="@style/TOSAcceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tos_button_height"
+            android:layout_marginBottom="@dimen/tos_button_spacing"
+            android:layout_marginLeft="@dimen/tos_button_margin"
+            android:layout_marginRight="@dimen/tos_button_margin"
+            android:contentDescription="@string/cont_desc_terms_accept"
+            android:text="@string/accept"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontButton
+            android:id="@+id/tos_view_terms_button"
+            style="@style/TOSViewTermsButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tos_button_height"
+            android:layout_marginBottom="@dimen/tos_button_margin"
+            android:layout_marginLeft="@dimen/tos_button_margin"
+            android:layout_marginRight="@dimen/tos_button_margin"
+            android:contentDescription="@string/cont_desc_terms_view"
+            android:text="@string/view_term"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

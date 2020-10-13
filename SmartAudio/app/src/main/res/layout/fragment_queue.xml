@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/queue_background">
+
+	<include layout="@layout/empty_view" />
+
+	<LinearLayout
+		android:id="@+id/queue_layout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/view_action_bar_height"
+			android:background="@color/view_action_bar_background">
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:id="@+id/queue_info"
+				style="@style/QueueActionBarInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="@dimen/view_action_bar_left_margin_for_text"
+				android:gravity="center"
+				android:visibility="visible"/>
+
+			<ImageButton
+				android:id="@+id/queue_more_options"
+				android:layout_width="@dimen/view_action_bar_more_options_width"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/view_action_bar_spacing"
+				android:background="@color/view_action_bar_background"
+				android:src="@drawable/btn_more_options"
+				android:padding="20dp"/>
+
+		</RelativeLayout>
+
+		<com.mobeta.android.dslv.DragSortListView
+			xmlns:dslv="http://schemas.android.com/tools"
+			android:id="@+id/queue_list"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:choiceMode="singleChoice"
+			android:dividerHeight="@dimen/divider_height"
+			android:divider="@color/menu_divider"
+			dslv:collapsed_height="2dp"
+			dslv:drag_scroll_start="0.33"
+			dslv:max_drag_scroll_speed="0.5"
+			dslv:float_alpha="0.6"
+			dslv:slide_shuffle_speed="0.3"
+			dslv:track_drag_sort="false"
+			dslv:use_default_controller="false" />
+	</LinearLayout>
+</LinearLayout>

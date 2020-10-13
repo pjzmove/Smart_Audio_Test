@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/browse_background">
+
+	<com.mobeta.android.dslv.DragSortListView
+		android:id="@+id/browse_list"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:dividerHeight="@dimen/divider_height"
+		android:divider="@color/menu_divider" />
+</LinearLayout>

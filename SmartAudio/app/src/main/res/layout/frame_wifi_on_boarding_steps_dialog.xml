@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/setup_steps_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/custom_dialog_background"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/margin_quarter"
+              android:layout_marginBottom="@dimen/margin_quarter"
+              android:layout_marginStart="@dimen/vertical_margin"
+              android:layout_marginEnd="@dimen/vertical_margin">
+
+        <com.qualcomm.qti.smartaudio.view.StepView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:stepText="@string/wifi_on_boarding_step_sending_credentials"/>
+
+        <com.qualcomm.qti.smartaudio.view.StepView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:stepText="@string/wifi_on_boarding_step_connecting"/>
+
+        <com.qualcomm.qti.smartaudio.view.StepView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:stepText="@string/wifi_on_boarding_step_check_connection_status"/>
+
+        <com.qualcomm.qti.smartaudio.view.StepView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:stepText="@string/wifi_on_boarding_step_join"/>
+
+        <com.qualcomm.qti.smartaudio.view.StepView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:stepText="@string/wifi_on_boarding_step_disconnection"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/list_item_player_volume_height"
+	android:background="@color/custom_dialog_background"
+	android:orientation="vertical">
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/list_item_player_volume_text"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/list_item_player_volume_text_height"
+		android:layout_marginTop="@dimen/list_item_player_volume_text_top_margin"
+		android:layout_marginBottom="@dimen/list_item_player_volume_text_bottom_margin"
+		android:layout_marginRight="@dimen/list_item_player_volume_horizonal_margin"
+		android:layout_marginLeft="@dimen/list_item_player_volume_horizonal_margin"
+		android:gravity="center|left"
+		style="@style/PlayerVolumeText"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/list_item_player_volume_bottom_height"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/list_item_player_volume_icon_horizonal_margin"
+			android:src="@drawable/ic_slider_volume_low"/>
+
+		<SeekBar
+			android:id="@+id/list_item_player_volume_seekbar"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_marginLeft="@dimen/list_item_player_volume_seekbar_horizonal_margin"
+			android:layout_marginRight="@dimen/list_item_player_volume_seekbar_horizonal_margin"
+			android:thumb="@drawable/thumb_seekbar_volume_dark"
+			android:progressDrawable="@drawable/seekbar_volume_dark"
+			android:splitTrack="false"
+			android:max="100"
+			android:progress="0"/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/list_item_player_volume_icon_horizonal_margin"
+			android:src="@drawable/ic_slider_volume_high"/>
+	</LinearLayout>
+</LinearLayout>

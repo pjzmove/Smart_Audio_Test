@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+		android:orientation="vertical"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+	  android:layout_marginEnd="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+		android:layout_marginTop="5dp"
+	  android:layout_marginBottom="10dp">
+
+    <LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="1">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/device_settings_child_text_view"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.9"
+			style="@style/SettingsActivityChildsTextView"
+			android:layout_marginTop="@dimen/device_settings_activity_list_item_settings_child_text_top_padding"/>
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/add_remove_surround_view"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="⊕"
+			android:layout_weight="0.1"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:layout_marginEnd="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+			android:layout_marginTop="@dimen/device_settings_activity_list_item_settings_child_text_top_padding"/>
+
+		</LinearLayout>
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/device_settings_child_sub_text_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/DeviceSettingsActivityChildsSubTextView"
+			android:layout_marginTop="@dimen/device_settings_activity_list_item_settings_child_sub_text_top_padding"
+			android:visibility="visible"/>
+</LinearLayout>

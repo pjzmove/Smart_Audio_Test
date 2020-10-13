@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:bottom="@dimen/speaker_fragment_list_item_speaker_now_playing_detail_height_px">
+		<shape android:shape="rectangle" >
+			<size android:height="@dimen/speaker_fragment_list_item_speaker_now_playing_detail_height"/>
+			<solid android:color="@color/speaker_fragment_list_item_speaker_now_playing_background" />
+			<corners
+				android:topLeftRadius="@dimen/rounded_corner"
+				android:topRightRadius="@dimen/rounded_corner" />
+		</shape>
+	</item>
+	<item android:top="@dimen/speaker_fragment_list_item_speaker_now_playing_detail_height">
+		<shape android:shape="rectangle" >
+			<size android:height="@dimen/speaker_fragment_list_item_speaker_height"/>
+			<solid android:color="@color/speaker_fragment_list_item_speaker_background" />
+			<corners
+				android:bottomLeftRadius="@dimen/rounded_corner"
+				android:bottomRightRadius="@dimen/rounded_corner" />
+		</shape>
+	</item>
+	<item>
+		<shape android:shape="rectangle" >
+			<solid android:color="@color/speaker_fragment_list_item_speaker_pressed_state" />
+			<corners android:radius="@dimen/rounded_corner" />
+		</shape>
+	</item>
+</layer-list>

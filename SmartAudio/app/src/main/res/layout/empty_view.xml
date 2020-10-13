@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***********************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                    *
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.            *
+  ~  ***********************************************************************************************/
+  -->
+
+<LinearLayout
+    android:id="@+id/empty_view_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/empty_view_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/empty_view_icon_top_margin"
+        android:scaleType="center"
+        android:contentDescription="@string/empty_content_description"/>
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/empty_view_text"
+        style="@style/EmptyViewTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_half"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_marginTop="@dimen/empty_view_text_top_margin"
+        android:gravity="center" />
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/empty_view_detail_text"
+        style="@style/EmptyViewDetailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_half"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_marginTop="@dimen/empty_view_detail_text_top_margin"
+        android:gravity="center" />
+
+</LinearLayout>

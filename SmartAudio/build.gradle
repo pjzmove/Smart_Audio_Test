@@ -1,0 +1,26 @@
+/*
+ * *************************************************************************************************
+ * * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.              *
+ * *************************************************************************************************
+ */
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /***********************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                    *
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.            *
+  ~  ***********************************************************************************************/
+  -->
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_menu_sorting_linear_layout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="@drawable/bottom_sheet_header_background"
+        android:clipToPadding="false"
+        android:padding="@dimen/bottom_menu_header_padding"
+        android:elevation="@dimen/bottom_menu_header_elevation"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_23dp"/>
+        <TextView
+            android:textSize="@dimen/bottom_menu_header_text_size"
+            android:textColor="@color/bottom_menu_item_text_color"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:text="@string/bottom_sheet_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

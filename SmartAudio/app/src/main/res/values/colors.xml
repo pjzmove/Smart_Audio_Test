@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+    <!-- Terms of Service colors -->
+    <color name="tos_instruction_text">#7D7D7D</color>
+    <color name="tos_accept_button_text">#1E1E1E</color>
+    <color name="tos_view_terms_button_text">#2C2C2C</color>
+
+    <!-- Custom Dialogs colors -->
+    <color name="custom_dialog_title">#303030</color>
+    <color name="custom_dialog_message">#1E1E1E</color>
+    <color name="custom_dialog_background">@android:color/transparent</color>
+    <color name="custom_dialog_button">#00B2DB</color>
+
+    <!-- Overlay color -->
+    <color name="background_overlay">#E13D3E3F</color>
+
+    <!-- Main content color -->
+    <color name="content_main_background">@android:color/black</color>
+
+    <!-- List Item pressed -->
+    <color name="list_item_pressed_background">#CECECE</color>
+    <color name="list_item_normal_background">@android:color/white</color>
+
+    <!-- Nav Drawer colors -->
+    <color name="nav_header_background">#E9EAEC</color>
+    <color name="nav_header_text">#7A7C84</color>
+
+    <color name="nav_menu_title">#212120</color>
+    <color name="nav_menu_details">#777777</color>
+    <color name="nav_menu_background">@android:color/white</color>
+
+    <!-- Divider colors -->
+    <color name="menu_divider">#E1E1E1</color>
+
+    <!-- Top bar colors -->
+    <color name="app_bar_title_text">@android:color/white</color>
+    <color name="app_bar_background">#212121</color>
+    <color name="app_bar_button_text">#7A7C84</color>
+    <color name="app_bar_cancel_button_text">#00B2DB</color>
+    <color name="app_bar_search_background">@android:color/white</color>
+
+    <!-- Divider colors -->
+    <color name="divider_landscape">#454549</color>
+
+    <!-- Edit Text colors -->
+    <color name="edit_text_cursor">#00B2DB</color>
+    <color name="edit_text">@android:color/black</color>
+    <color name="edit_text_hint">#A4A4A4</color>
+    <color name="edit_text_underline">#D2D2D2</color>
+
+    <!-- Manage zones colors -->
+    <color name="popup_background">@android:color/white</color>
+    <color name="manage_zones_title">#7A7C84</color>
+    <color name="manage_zones_text">#303030</color>
+    <color name="manage_zones_detail">#777777</color>
+
+    <!-- Speaker Fragment colors -->
+    <color name="speaker_fragment_list_background">@android:color/transparent</color>
+    <color name="speaker_fragment_bottom_bar">#1C1D1E</color>
+    <color name="speaker_fragment_bottom_bar_button_text">@android:color/white</color>
+
+    <color name="speaker_fragment_list_item_display_name_background">#E1E1E1</color>
+    <color name="speaker_fragment_list_item_speaker_background">@android:color/white</color>
+    <color name="speaker_fragment_list_item_speaker_text">#2C2C2C</color>
+    <color name="speaker_fragment_list_item_speaker_addition_text">#7A7C84</color>
+
+    <color name="speaker_fragment_list_item_speaker_now_playing_background">@android:color/white</color>
+    <color name="speaker_fragment_list_item_speaker_now_playing_track_text">#2C2C2C</color>
+    <color name="speaker_fragment_list_item_speaker_now_playing_artist_text">#7A7C84</color>
+    <color name="speaker_fragment_list_item_speaker_now_playing_album_text">#222223</color>
+    <color name="speaker_fragment_list_section">#878787</color>
+
+    <color name="speaker_fragment_list_item_speaker_pressed_state">#19000000</color>
+    <color name="speaker_fragment_list_item_speaker_normal_state">@android:color/white</color>
+
+    <!-- Grouping -->
+    <color name="speaker_group_play_text">#7A7C84</color>
+    <color name="speaker_group_background">@android:color/black</color>
+    <color name="speaker_group_button_text">#212121</color>
+    <color name="speaker_group_list_view_divider">#19FFFFFF</color>
+    <color name="speaker_group_player_text">@android:color/white</color>
+
+    <!-- View Action Bar -->
+    <color name="view_action_bar_background">@android:color/black</color>
+    <color name="view_action_bar_text">@android:color/white</color>
+    <color name="view_action_bar_info_text">#878787</color>
+    <color name="view_action_bar_button_text">#00B2DB</color>
+
+    <!-- Browse Music -->
+    <color name="browse_background">#E9EAEC</color>
+    <color name="list_item_browse_main_text">#212120</color>
+    <color name="browse_loading_text">#303030</color>
+    <color name="browse_media_title_text">#303030</color>
+    <color name="browse_media_subtitle_text">#777777</color>
+    <color name="browse_more_option_text">@android:color/black</color>
+    <color name="list_item_browse_more_option_background">#E1E1E1</color>
+    <color name="list_item_browse_section_background">#E9EBEC</color>
+    <color name="list_item_browse_section_text">#7A7C84</color>
+
+    <!-- Settings Activity colors -->
+    <color name="settings_activity_list_item_settings_header_background">#E9EAEC</color>
+    <color name="settings_activity_list_item_settings_header_text">#7A7C84</color>
+    <color name="settings_activity_list_item_settings_child_background">@android:color/white</color>
+    <color name="settings_activity_list_item_settings_child_text">#303030</color>
+
+    <!-- Device Settings Activity colors -->
+    <color name="device_settings_activity_list_item_settings_child_sub_text">#777777</color>
+    <color name="device_settings_activity_list_item_settings_child_background">@android:color/white</color>
+
+    <!-- Mini Player -->
+    <color name="slider_panel_mini_now_playing_background">@android:color/black</color>
+    <color name="slider_panel_mini_now_playing_text">#009AAA</color>
+    <color name="slider_panel_mini_now_playing_track_text">@android:color/white</color>
+    <color name="slider_panel_mini_now_playing_artist_text">#7A7C84</color>
+
+    <!-- Now Playing -->
+    <color name="now_playing_background">#000000</color>
+    <color name="now_playing_track_text">@android:color/white</color>
+    <color name="now_playing_artist_text">#7A7C84</color>
+    <color name="now_playing_album_text">@android:color/white</color>
+
+    <color name="queue_background">#E9EBEC</color>
+
+    <!-- Empty View -->
+    <color name="empty_view_text">@android:color/white</color>
+    <color name="empty_queue_view_text">#21211F</color>
+    <color name="empty_view_detail_text">#7A7C84</color>
+
+    <!-- Volume Control -->
+    <color name="list_item_player_volume_text">#7A7C84</color>
+    <color name="list_item_player_volume_percentage_text">#2C2C2C</color>
+
+    <!-- Setup Fragment colors -->
+    <color name="wifi_signal_drawable">#454549</color>
+    <color name="setup_step_icon_cross">@color/brand_red_dark_tone</color>
+    <color name="setup_step_icon_tick">#7A7C84</color>
+    <color name="setup_step_text_waiting">#7A7C84</color>
+    <color name="setup_error_message">@color/brand_red_dark_tone</color>
+    <color name="setup_fragment_app_bar_title_text">@android:color/white</color>
+    <color name="setup_fragment_app_bar_background">#212121</color>
+    <color name="setup_fragment_background">#E9EAEC</color>
+    <color name="setup_fragment_button_divider">#2B2B2B</color>
+    <color name="setup_fragment_button_text">@android:color/white</color>
+    <color name="setup_fragment_button_background">@android:color/black</color>
+    <color name="setup_added_fragment_great_text">#212120</color>
+    <color name="setup_added_fragment_regular_added_text">#7A7C84</color>
+    <color name="setup_added_fragment_special_added_text">#6D6E72</color>
+    <color name="setup_instruction_fragment_instruction_text">#939393</color>
+    <color name="setup_list_fragment_empty_text">#7A7C84</color>
+    <color name="setup_list_fragment_group_text">#7A7C84</color>
+    <color name="setup_list_fragment_background">#E9EAEC</color>
+    <color name="setup_list_fragment_item_text">#303030</color>
+    <color name="setup_adjust_audio_more_info_fragment_text">#00B2DB</color>
+    <color name="setup_adjust_audio_more_info_fragment_instruction_text">#7A7C84</color>
+    <color name="list_footer_text">#777777</color>
+    <color name="addwifi_header_text">#7A7C84</color>
+    <color name="addwifi_spinner_text">#2C2C2C</color>
+
+    <color name="setup_adjust_audio_test_background">@android:color/white</color>
+    <color name="setup_adjust_audio_test_text">#303030</color>
+    <color name="setup_adjust_audio_test_switch_on">#AEC9CE</color>
+    <color name="setup_adjust_audio_test_switch_off">#C8C7C7</color>
+
+    <color name="view_channel_volume_text">#7A7C84</color>
+    <color name="view_channel_volume_percentage_text">#2C2C2C</color>
+
+    <color name="custom_dialog_special_message">#2C2C2C</color>
+
+    <color name="list_item_music_service">#000000</color>
+    <color name="music_service_background">@android:color/white</color>
+    <color name="music_service_divider">#2C2C2C</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="orange_54">#F7921E</color>
+    <color name="orange_light_tone_75">#fbc384</color>
+
+    <color name="colorPrimary">#00A4d1</color>
+    <color name="colorPrimaryDark">#005268</color>
+    <color name="brand_red_dark_tone">#D14124</color>
+    <color name="avs_intro_text">@android:color/black</color>
+    <color name="avs_detail_text">#6D6E72</color>
+    <color name="avs_bubble_text">@android:color/white</color>
+
+    <!-- Network tree -->
+    <color name="network_tree_line">#AAAAAA</color>
+
+    <!-- Device details -->
+    <color name="device_details_icons_divider">#7A7C84</color>
+
+    <!-- Bottom Menu -->
+    <color name="bottom_menu_item_text_color">#000000</color>
+
+</resources>

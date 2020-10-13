@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**********************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                   *
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.           *
+  ~  **********************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginTop="20dp"
+  android:orientation="vertical">
+
+  <!-- speaker view -->
+  <LinearLayout
+    android:id="@+id/speaker_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Device information -->
+    <include
+      android:id="@+id/node_information_layout"
+      layout="@layout/node_information"/>
+
+    <!-- playing information -->
+    <include
+      android:id="@+id/node_now_playing_layout"
+      layout="@layout/speaker_playing_now_view"/>
+
+  </LinearLayout>
+
+  <!-- children container -->
+  <LinearLayout
+    android:id="@+id/sub_items_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+  </LinearLayout>
+
+</LinearLayout>

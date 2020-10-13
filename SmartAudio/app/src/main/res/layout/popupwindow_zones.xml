@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/popupwindow_layout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ImageView
+		android:id="@+id/popupwindow_arrow_up"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_gravity="center"
+		android:background="@drawable/arrow_up_popup" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:background="@drawable/bgd_manage_zones_popup">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/manage_zones_item_title_height">
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/manage_zones_item_title_text_height"
+				android:gravity="center|left"
+				android:layout_marginLeft="@dimen/manage_zones_item_title_margin"
+				android:text="@string/my_zones"
+				style="@style/ManageZoneTitleTextView"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/divider_height"
+				android:background="@color/menu_divider"
+				android:layout_marginRight="@dimen/manage_zones_divider_margin_right"
+				android:layout_marginLeft="@dimen/manage_zones_divider_margin_left" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/popupwindow_no_zones_layout"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/manage_zones_item_none">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:scaleType="center"
+				android:src="@drawable/ic_manage_zones_empty"/>
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/manage_zones_item_left_margin"
+				android:layout_marginRight="@dimen/manage_zones_item_right_margin"
+				android:text="@string/no_zones_title"
+				style="@style/ManageZoneItemTitleTextView"
+				android:gravity="left|center"/>
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="left|center"
+				android:layout_marginLeft="@dimen/manage_zones_item_left_margin"
+				android:layout_marginRight="@dimen/manage_zones_item_right_margin"
+				android:layout_marginBottom="@dimen/manage_zones_item_bottom_margin"
+				android:text="@string/no_zones_details"
+				style="@style/ManageZoneItemDetailTextView"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/divider_height"
+				android:background="@color/menu_divider"
+				android:layout_marginRight="@dimen/manage_zones_divider_margin_right"
+				android:layout_marginLeft="@dimen/manage_zones_divider_margin_left" />
+
+		</LinearLayout>
+
+		<ListView
+			android:id="@+id/popupwindow_zone_list"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:divider="@null"/>
+
+		<LinearLayout
+			android:id="@+id/popupwindow_setup_zones_layout"
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/manage_zones_item_setup_height"
+			android:background="@drawable/bgd_setup_zones_popup">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:src="@drawable/ic_manage_list"
+				android:layout_marginLeft="@dimen/manage_zones_item_left_margin"/>
+
+			<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+				android:id="@+id/popupwindow_setup_zones_text"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="left|center"
+				android:layout_marginLeft="@dimen/manage_zones_item_horizontal_margin"
+				android:text="@string/setup_zones"
+				style="@style/ManageZoneSetupTextView"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

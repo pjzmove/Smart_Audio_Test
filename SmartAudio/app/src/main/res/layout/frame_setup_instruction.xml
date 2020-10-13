@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/setup_fragment_background">
+	
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_instruction_header_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/setup_text_width_padding"
+		android:paddingRight="@dimen/setup_text_width_padding"
+		android:paddingBottom="@dimen/setup_text_height_padding"
+		android:paddingTop="@dimen/setup_text_height_padding"
+		android:singleLine="false"
+		style="@style/SetupInstructionFragmentInstructionText"
+		tools:text="Header"/>
+
+	<ImageView
+		android:id="@+id/setup_instruction_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/setup_instruction_header_text"
+		android:paddingTop="@dimen/setup_instruction_image_padding"
+		android:layout_centerHorizontal="true"
+		tools:src="@drawable/ic_setup_connect_ethernet_287x174dp"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_instruction_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="false"
+		android:gravity="center"
+		android:paddingTop="@dimen/setup_text_height_padding"
+		android:paddingBottom="@dimen/setup_text_height_padding"
+		style="@style/SetupAddedFragmentRegularAddedText"
+		android:layout_below="@+id/setup_instruction_image"
+		android:visibility="gone"
+		tools:visibility="visible"
+		tools:text="text"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_instruction_subtext_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="false"
+		android:gravity="center"
+		android:paddingTop="@dimen/setup_added_fragment_text_to_subtext_height"
+		android:paddingBottom="196dp"
+		style="@style/SetupAddedFragmentRegularAddedText"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@+id/setup_instruction_text"
+		android:visibility="gone"
+		tools:visibility="visible"
+		tools:text="sub-text"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/setup_action_bar_title"
+	android:layout_width="match_parent"
+	android:layout_height="?attr/actionBarSize"
+	style="@style/SetupFragmentAppBarTextView"
+	android:layout_centerHorizontal="true"
+	android:gravity="center"/>

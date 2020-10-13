@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:weightSum="1"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:clickable="true"
+    android:background="@color/list_item_pressed_background">
+
+    <ImageView
+      android:id="@+id/device_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_device_soundbar_256x58dp"
+      android:layout_marginTop="15dp"
+      android:layout_gravity="center|center_vertical|center_horizontal"/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="10dp"
+      android:layout_gravity="center_horizontal">
+
+      <TextView
+        android:id="@+id/player_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="22dp"
+        android:text="S500 THEATERMAX SOUNDBAR"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_detail"
+        android:gravity="center"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+      android:id="@+id/indicators_top_divider"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/divider_height"
+      android:background="@color/white"/>
+
+    <!-- All indicators -->
+    <LinearLayout
+      android:id="@+id/indicators_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/list_item_pressed_background"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <!-- AVS indicator -->
+      <ImageView
+        android:id="@+id/avs_ind"
+        android:layout_width="@dimen/device_details_icon_size"
+        android:layout_height="@dimen/device_details_icon_size"
+        android:layout_margin="@dimen/device_details_icon_margin"
+        android:src="@drawable/ic_alexa"
+        android:visibility="gone"/>
+
+      <!-- Divider -->
+      <View
+        android:id="@+id/indicators_vertical_divider"
+        android:layout_width="@dimen/device_details_divider_width"
+        android:layout_height="@dimen/device_details_divider_height"
+        android:layout_margin="@dimen/device_details_icon_margin"
+        android:layout_marginStart="@dimen/device_details_divider_margin_horizontal"
+        android:layout_marginEnd="@dimen/device_details_divider_margin_horizontal"
+        android:background="@color/device_details_icons_divider"/>
+
+      <!-- Bluetooth indicator -->
+      <ImageView
+        android:id="@+id/bluetooth_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/device_details_icon_margin"
+        android:src="@drawable/ic_bluetooth_connected_19dp"
+        android:visibility="gone"/>
+
+      <!-- zigbee indicator -->
+      <ImageView
+        android:id="@+id/zigbee_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/device_details_icon_margin"
+        android:src="@drawable/ic_zigbee_connected_19dp"
+        android:visibility="gone"/>
+
+      <!-- Wifi indicator -->
+      <ImageView
+        android:id="@+id/wifi_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/device_details_icon_margin"
+        android:src="@drawable/ic_wifi_19dp"
+        android:visibility="gone"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <!-- List of parameters -->
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/device_action_list_view"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.6"/>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#D6DCE4" />
+
+</LinearLayout>
+

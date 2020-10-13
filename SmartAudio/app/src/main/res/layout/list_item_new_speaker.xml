@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setup_wifi_child_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/vertical_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/device_settings_activity_list_item_settings_child_background">
+
+    <ImageView
+        android:id="@+id/setup_name_speaker_add_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+        android:src="@drawable/ic_add_item"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:contentDescription="@string/empty_content_description"/>
+
+    <ImageView
+        android:id="@+id/setup_new_speaker_display_level_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+        android:tint="@color/wifi_signal_drawable"
+        android:contentDescription="@string/empty_content_description"/>
+
+    <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/new_speaker_display_name_text_view"
+        style="@style/SettingsActivityChildsTextView"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/settings_activity_list_item_settings_child_left_padding"
+        android:paddingEnd="@dimen/settings_activity_list_item_settings_child_right_padding"
+        tools:text="xxxx_AJ"/>
+
+</LinearLayout>
+

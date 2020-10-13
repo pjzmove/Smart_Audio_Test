@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:gravity="center_vertical|fill_horizontal"
+		  android:start="4dp"
+		  android:end="4dp">
+		<shape android:shape="rectangle"
+			   android:tint="@color/setup_adjust_audio_test_switch_on">
+			<corners android:radius="7dp" />
+			<solid android:color="@color/setup_adjust_audio_test_switch_off" />
+			<size android:height="14dp" />
+		</shape>
+	</item>
+</layer-list>

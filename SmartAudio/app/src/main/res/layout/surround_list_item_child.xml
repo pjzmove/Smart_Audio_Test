@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/device_settings_child_text_view_layout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@color/device_settings_activity_list_item_settings_child_background">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginStart="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+	  android:layout_marginEnd="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+	  android:layout_marginTop="10dp"
+	  android:layout_marginBottom="10dp"
+		android:weightSum="1"
+		android:id="@+id/layout_view_container">
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.9">
+
+      <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/device_settings_child_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/SettingsActivityChildsTextView"
+        android:text="Left and Right"/>
+
+      <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/device_settings_child_sub_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/DeviceSettingsActivityChildsSubTextView"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/device_settings_child_indicator"
+      android:layout_weight="0.1"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+      android:text = "⊖"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:visibility="visible"/>
+  </LinearLayout>
+
+	<LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:layout_marginStart="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+	    android:layout_marginEnd="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+		  android:id="@+id/expandable_items"/>
+
+</LinearLayout>

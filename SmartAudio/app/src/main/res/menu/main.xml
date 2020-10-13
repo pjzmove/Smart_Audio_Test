@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btn_zones"
+        android:contentDescription="@string/cont_desc_app_bar_options_menu"
+        android:icon="@drawable/btn_more_options"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/btn_wifi_onboarding"
+        android:contentDescription="@string/cont_desc_app_bar_add_a_speaker"
+        android:icon="@drawable/btn_add"
+        android:orderInCategory="99"
+        android:title=""
+        app:showAsAction="always"
+        />
+</menu>

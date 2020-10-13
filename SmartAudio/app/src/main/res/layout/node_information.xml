@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**********************************************************************************************
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.           *
+  ~  **********************************************************************************************/
+  -->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingStart="@dimen/tree_margin"
+  android:background="@drawable/bgd_speaker_name_text_layout"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  tools:ignore="RtlSymmetry">
+
+  <!-- icon -->
+  <ImageView
+    android:id="@+id/node_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tree_view_element_margin"
+    android:contentDescription="@string/empty_content_description"
+    android:src="@drawable/ic_speaker_23dp"/>
+
+  <!-- title -->
+  <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+    android:id="@+id/node_title"
+    style="@style/SpeakerFragmentSpeakerTextView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"/>
+
+  <!-- bluetooth indicator -->
+  <ImageView
+    android:id="@+id/node_bluetooth_indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tree_view_element_margin"
+    android:contentDescription="@string/empty_content_description"
+    android:src="@drawable/ic_bluetooth_connected_19dp"/>
+
+  <!-- zigbee indicator -->
+  <ImageView
+    android:id="@+id/node_zigbee_indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tree_view_element_margin"
+    android:contentDescription="@string/empty_content_description"
+    android:src="@drawable/ic_zigbee_connected_19dp"/>
+
+  <!-- options button -->
+  <com.qualcomm.qti.smartaudio.view.ExpandCollapseButton
+    android:id="@+id/node_options_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/tree_view_element_margin"
+    android:paddingTop="@dimen/tree_options_button_vertical_padding"
+    android:paddingBottom="@dimen/tree_options_button_vertical_padding"
+    android:paddingStart="@dimen/tree_options_button_horizontal_padding"
+    android:paddingEnd="@dimen/tree_options_button_horizontal_padding"
+    android:background="@android:color/transparent"
+    android:src="@drawable/btn_more_options_pressed"/>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:android.support.v7.appcompat="http://schemas.android.com/apk/res-auto"
+	  android:orientation="vertical"
+	  android:background="@color/setup_fragment_background"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent" >
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/setup_instruction_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/horizontal_margin"
+		android:paddingRight="@dimen/horizontal_margin"
+		android:paddingBottom="@dimen/setup_text_height_padding"
+		android:paddingTop="@dimen/setup_text_height_padding"
+		android:singleLine="false"
+		style="@style/SetupInstructionFragmentInstructionText" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/setup_adjust_audio_test_audio_view_height"
+		android:background="@color/setup_adjust_audio_test_background"
+		android:paddingLeft="@dimen/horizontal_margin"
+		android:paddingRight="@dimen/horizontal_margin">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:singleLine="true"
+			android:gravity="center"
+			android:text="@string/test_sound_loop"
+			android:layout_alignParentLeft="true"
+			style="@style/AdjustAudioFragmentTestText" />
+
+		<android.support.v7.widget.SwitchCompat
+			android:id="@+id/setup_test_loop_switch"
+			android:layout_width="@dimen/setup_adjust_audio_test_switch_width"
+			android:layout_height="@dimen/setup_adjust_audio_test_switch_height"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:thumb="@drawable/switch_thumb_anim"
+			android.support.v7.appcompat:track="@drawable/switch_track"
+			android.support.v7.appcompat:thumbTextPadding="16dp"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:paddingLeft="@dimen/horizontal_margin"
+		android:paddingRight="@dimen/horizontal_margin"
+		android:gravity="fill_vertical">
+		<include android:id="@+id/layout_subwoofer_volume"
+			layout="@layout/view_channel_volume" />
+
+		<include android:id="@+id/layout_left_surround_volume"
+			 layout="@layout/view_channel_volume" />
+
+		<include android:id="@+id/layout_right_surround_volume"
+			 layout="@layout/view_channel_volume" />
+
+		<include android:id="@+id/layout_system_volume"
+			 layout="@layout/view_channel_volume" />
+	</LinearLayout>
+</LinearLayout>

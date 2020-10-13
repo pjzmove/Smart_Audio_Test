@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/list_item_media_height"
+	android:gravity="center"
+	android:background="@drawable/bgd_list_item">
+
+	<ImageView
+		android:id="@+id/media_item_drag"
+		android:layout_width="@dimen/list_item_media_button_width"
+		android:layout_height="match_parent"
+		android:src="@drawable/btn_move_item"
+		android:layout_marginLeft="@dimen/list_item_media_left_margin"
+		android:visibility="visible"/>
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/media_item_image"
+			android:layout_width="@dimen/list_item_media_image_side"
+			android:layout_height="@dimen/list_item_media_image_side"
+			android:layout_marginTop="@dimen/list_item_media_image_vertical_margin"
+			android:layout_marginBottom="@dimen/list_item_media_image_vertical_margin"
+			android:layout_marginLeft="@dimen/list_item_browse_side_margin"
+			android:layout_marginRight="@dimen/list_item_browse_image_to_text_spacing"
+			android:src="@drawable/ic_album_art_default_list"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginRight="@dimen/list_item_browse_side_margin"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/media_item_title"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/list_item_media_title_height"
+			android:layout_marginTop="@dimen/list_item_media_text_vertical_margin"
+			android:text="Title"
+			style="@style/BrowseMediaTitleTextView"/>
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/media_item_subtitle"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/list_item_media_subtitle_height"
+			android:layout_marginTop="@dimen/list_item_media_vertical_margin"
+			android:layout_marginBottom="@dimen/list_item_media_text_vertical_margin"
+			android:text="Subtitle"
+			style="@style/BrowseMediaSubtitleTextView"/>
+	</LinearLayout>
+
+	<ImageButton
+		android:id="@+id/media_item_more_option"
+		android:layout_width="@dimen/list_item_media_button_width"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/list_item_media_right_margin"
+		android:background="@android:color/transparent"
+		android:src="@drawable/btn_more_options"
+		android:visibility="visible"
+		android:padding="20dp"/>
+
+	<com.qualcomm.qti.smartaudio.view.PlayingAnimationView
+		android:id="@+id/media_item_play_animation"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:scaleType="center"
+		android:layout_marginRight="@dimen/list_item_media_right_margin"
+		android:visibility="gone"/>
+
+</LinearLayout>

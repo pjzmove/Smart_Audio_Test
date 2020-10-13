@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/setting_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <include layout="@layout/app_bar_settings"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+
+            <TextView
+                android:id="@+id/avs_intro_text"
+                style="@style/AvsIntroText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/avs_intro_side_margin"
+                android:layout_marginRight="@dimen/avs_intro_side_margin"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="@string/avs_intro"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"/>
+
+            <TextView
+                android:id="@+id/avs_detail_text"
+                style="@style/AvsDetailText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/avs_detail_side_margin"
+                android:layout_marginRight="@dimen/avs_detail_side_margin"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="@string/avs_details"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"/>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                style="@style/AvsSetupFragmentButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setup_fragment_button_height"
+                android:layout_marginBottom="@dimen/setup_fragment_button_horizontal_margin"
+                android:layout_marginLeft="@dimen/setup_fragment_button_horizontal_margin"
+                android:layout_marginRight="@dimen/setup_fragment_button_horizontal_margin"
+                android:contentDescription="@string/cont_desc_button_avs_sign_in"
+                android:text="@string/avs_sign_in"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

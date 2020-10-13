@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**********************************************************************************************
+  ~  * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.           *
+  ~  **********************************************************************************************/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/speaker_fragment_list_item_speaker_now_playing_detail_height">
+
+    <ImageView
+      android:id="@+id/speaker_album_art"
+      android:layout_width="@dimen/speaker_fragment_list_item_speaker_now_playing_album_art_size"
+      android:layout_height="@dimen/speaker_fragment_list_item_speaker_now_playing_album_art_size"
+      android:layout_margin="@dimen/speaker_fragment_list_item_speaker_now_playing_padding"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_album_art_default_med"
+      android:contentDescription="@string/empty_content_description"/>
+
+    <com.qualcomm.qti.smartaudio.view.PlayPauseButton
+      android:id="@+id/speaker_album_art_play_pause_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/speaker_fragment_list_item_speaker_now_playing_padding"
+      android:layout_alignBottom="@+id/speaker_album_art"
+      android:layout_alignEnd="@+id/speaker_album_art"
+      android:background="@android:color/transparent"/>
+
+    <com.qualcomm.qti.smartaudio.view.PlayingAnimationView
+      android:id="@+id/speaker_playing_animation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="@dimen/speaker_fragment_list_item_speaker_now_playing_animation_right_margin"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+      android:id="@+id/speaker_track_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginEnd="@dimen/speaker_fragment_list_item_speaker_now_playing_track_right_margin"
+      android:layout_toStartOf="@+id/speaker_playing_animation"
+      android:layout_toEndOf="@+id/speaker_album_art">
+
+      <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/speaker_track_text"
+        style="@style/SpeakerFragmentTrackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/speaker_fragment_list_item_speaker_now_playing_track_height"
+        android:layout_marginTop="@dimen/speaker_fragment_list_item_speaker_now_playing_top_margin"
+        android:layout_alignParentTop="true"/>
+
+      <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/speaker_album_text"
+        style="@style/SpeakerFragmentAlbumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/speaker_fragment_list_item_speaker_now_playing_album_height"
+        android:layout_marginBottom="@dimen/speaker_fragment_list_item_speaker_now_playing_bottom_margin"
+        android:layout_alignParentBottom="true"/>
+
+      <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+        android:id="@+id/speaker_artist_text"
+        style="@style/SpeakerFragmentArtistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/speaker_fragment_list_item_speaker_now_playing_artist_height"
+        android:layout_marginTop="@dimen/speaker_fragment_list_item_speaker_now_playing_vertical_spacing"
+        android:layout_above="@+id/speaker_album_text"
+        android:layout_below="@+id/speaker_track_text"/>
+    </RelativeLayout>
+
+  </RelativeLayout>

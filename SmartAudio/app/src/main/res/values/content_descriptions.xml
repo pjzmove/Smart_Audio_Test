@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+
+    <!-- empty string for images which do not need a content description -->
+    <string name="empty_content_description"/>
+
+    <!-- Components and states -->
+    <string name="cont_desc_dialog">Dialog %s</string> <!-- Dialog {dialog_title} -->
+    <string name="cont_desc_dialog_action">Dialog action %s</string> <!-- Dialog action {button_label} -->
+    <string name="cont_desc_item_control">Control for %s</string> <!-- Control for {setting_name}  -->
+    <string name="cont_desc_item_title">Title for %s</string> <!-- Title for {setting_name}  -->
+    <string name="cont_desc_item_description">Description for %s</string> <!-- Description for {setting_name}  -->
+    <string name="cont_desc_seek_bar">Seek bar for %s</string> <!-- Seek bar for {setting_name} -->
+    <string name="cont_desc_setting_item">Setting %s</string> <!-- Setting {setting_name} -->
+    <string name="cont_desc_menu_item">Menu %s</string> <!-- Menu {menu_name} -->
+    <string name="cont_desc_list_item">Item %s</string> <!-- Item {item_name} -->
+    <string name="cont_desc_list_item_selected">Item %s is selected.</string> <!-- Item {item_name} -->
+    <string name="cont_desc_screen">Screen %s</string> <!-- Screen {screen_name} -->
+    <string name="cont_desc_dialog_edit_text">Edit text for %s</string> <!-- Edit text for dialog {dialog_name} -->
+    <string name="cont_desc_item_more_options">More options for %s</string> <!-- More options for {setting_name} -->
+    <string name="cont_desc_menu_option">Option %s</string> <!-- Option {option_name} -->
+    <string name="cont_desc_unknown">Unknown</string>
+    <string name="cont_desc_cancel">Cancel</string>
+    <string name="cont_desc_save">Save changes</string>
+    <string name="cont_desc_selected">selected</string>
+    <string name="cont_desc_not_selected">not selected</string>
+
+    <!-- Start screen: terms of service -->
+    <string name="cont_desc_terms_accept">Accept terms</string>
+    <string name="cont_desc_terms_view">View terms</string>
+    <string name="cont_desc_app_version">App version</string>
+
+    <!-- Main screen -->
+    <string name="cont_desc_screen_speakers_list">Screen to display speakers to control</string>
+    <string name="cont_desc_screen_network_tree">Screen to display speaker network</string>
+    <string name="cont_desc_section_what_is_playing">Section what is playing</string>
+    <string name="cont_desc_section_speakers">Section available speakers</string>
+    <string name="cont_desc_app_bar_add_a_speaker">Add a speaker</string>
+    <string name="cont_desc_app_bar_options_menu">General options</string>
+    <string name="cont_desc_zone_music_selection">Music selection for %s</string> <!-- Music selection for {zone_name} -->
+    <string name="cont_desc_zone_menu">More options for %s</string> <!-- More options for {zone_name} -->
+    <string name="cont_desc_pause_all">Pause all music</string>
+
+    <!-- About screen -->
+    <string name="cont_desc_about">to display legal content and terms of service</string>
+    <string name="cont_desc_legal_notices">for legal notices</string>
+    <string name="cont_desc_terms_of_service">for terms of service</string>
+
+    <!-- Playing and queue controls top bar -->
+    <string name="cont_desc_screen_playing">Now playing screen</string>
+    <string name="cont_desc_screen_queue">Queue screen</string>
+    <string name="cont_desc_menu_queue">Show music queue</string>
+    <string name="cont_desc_menu_playing">Show playing controls</string>
+    <string name="cont_desc_slide_down_controls">Slide down the controls</string>
+
+    <!-- Playing -->
+    <string name="cont_desc_zone_play">Play for %s</string> <!-- Play for {zone_name} -->
+    <string name="cont_desc_zone_pause">Pause for %s</string> <!-- Pause for {zone_name} -->
+    <string name="cont_desc_play_previous">Play previous track</string>
+    <string name="cont_desc_play_next">Play next track</string>
+    <string name="cont_desc_playing_repeat_mode">Repeat mode is %s</string>
+    <string name="cont_desc_playing_repeat_all">Repeat all</string>
+    <string name="cont_desc_playing_repeat_one">Repeat one</string>
+    <string name="cont_desc_playing_repeat_none">Repeat none</string>
+    <string name="cont_desc_playing_shuffle_mode">Repeat mode is %s</string>
+    <string name="cont_desc_playing_shuffle_on">Shuffle on</string>
+    <string name="cont_desc_playing_shuffle_off">Shuffle off</string>
+    <string name="cont_desc_playing_volume_settings">Volume settings</string>
+    <string name="cont_desc_playing_volume">Volume for zone %s is set at %d</string>
+
+    <!-- Queue -->
+    <string name="cont_desc_queue_track">Track number %d is %s</string>
+    <string name="cont_desc_queue_track_unknown">Track number %d is unknown</string>
+    <string name="cont_desc_queue_options">See queue options</string>
+    <string name="cont_desc_queue_track_options">More options for track %s</string>
+    <string name="cont_desc_queue_unknown_track_options">See options for unknown track %d</string>
+
+    <!-- Wi-Fi On Boarding -->
+    <string name="cont_desc_screen_on_boarding_choose_speaker">Screen for selection of a speaker to on board</string>
+    <string name="cont_desc_screen_on_boarding_choose_network">Screen for selection of a network to on board with</string>
+    <string name="cont_desc_screen_on_boarding_complete">Screen for setup complete</string>
+    <string name="cont_desc_button_select_speaker">Select speaker %s</string> <!-- Select speaker {speaker_name} -->
+    <string name="cont_desc_button_select_network">Select network %s</string> <!-- Select network {network_ssid} -->
+    <string name="cont_desc_button_add_network">Add a network</string>
+    <string name="cont_desc_button_refresh_list">Refresh the list</string>
+    <string name="cont_desc_enter_password">Enter password</string>
+    <string name="cont_desc_wifi_ssid">Enter SSID</string>
+    <string name="cont_desc_select_security">Select security</string>
+    <string name="cont_desc_button_add_another_speaker">Add another speaker</string>
+    <string name="cont_desc_button_exit_setup">Exit setup</string>
+
+    <!-- Device Details -->
+    <string name="cont_desc_screen_details">Device details screen</string>
+    <string name="cont_desc_screen_output">Output selection screen</string>
+    <string name="cont_desc_screen_surround">Surround system setup screen</string>
+    <string name="cont_desc_details_zone_name">Zone %s</string> <!-- Zone {zone_name} -->
+    <string name="cont_desc_details_group_volume">Group volume</string>
+    <string name="cont_desc_details_player_volume">Player volume</string>
+    <string name="cont_desc_details_audio_source">Available audio sources</string>
+    <string name="cont_desc_details_surround_system">Surround system</string>
+    <string name="cont_desc_details_output_destinations">Available output destinations</string>
+    <string name="cont_desc_details_group_list">Devices in group</string>
+    <string name="cont_desc_details_group_with_other_speakers">Group with other speakers</string>
+
+    <!-- Media browser -->
+    <string name="cont_desc_screen_browsing">Browsing screen for %s</string>
+    <string name="cont_desc_browse_category">Select category %s</string>
+    <string name="cont_desc_browse_item">Select item %s</string>
+    <string name="cont_desc_browse_section">Section %s</string>
+    <string name="cont_desc_browse_play_all">Play all items now</string>
+    <string name="cont_desc_browse_all_items">All items</string>
+    <string name="cont_desc_search_content">Search for contents</string>
+    <string name="cont_desc_search_edit_text">Enter the media to search for</string>
+    <string name="cont_desc_search_clear">Clear search</string>
+    <string name="cont_desc_online_service">Select %s</string>
+
+    <!-- Device Settings -->
+    <string name="cont_desc_screen_device_settings">Device settings screen</string>
+    <string name="cont_desc_settings_group_settings">General settings group</string>
+    <string name="cont_desc_settings_group_bluetooth">Bluetooth settings group</string>
+    <string name="cont_desc_settings_group_network">Network information group</string>
+    <string name="cont_desc_settings_item_set_name">Setting to set device name</string>
+    <string name="cont_desc_settings_item_voice_control">Setting to manage voice control</string>
+    <string name="cont_desc_settings_item_zigbee">Setting to manage ZigBee and ZigBee devices</string>
+    <string name="cont_desc_settings_item_bluetooth">Setting to manage Bluetooth and Bluetooth devices</string>
+    <string name="cont_desc_settings_item_connection_type">Type of Internet connection</string>
+    <string name="cont_desc_settings_item_signal">Signal strength</string>
+    <string name="cont_desc_settings_ip_address">Device IP address</string>
+    <string name="cont_desc_settings_mac_address">Device MAC address</string>
+
+    <!-- Voice Control - Main View -->
+    <string name="cont_desc_screen_voice_control">Screen for voice control</string>
+    <string name="cont_desc_voice_control_avs">Amazon Alexa</string>
+    <string name="cont_desc_voice_control_google_assistant">Google Assistant</string>
+    <string name="cont_desc_voice_control_qcs40x_voice">QCS40X Voice</string>
+    <string name="cont_desc_voice_control_cortana">Cortana</string>
+    <string name="cont_desc_voice_control_default">Default voice service</string>
+
+    <!-- Voice Control - AVS On Boarding -->
+    <string name="cont_desc_screen_avs_on_boarding">Screen for AVS on boarding</string>
+    <string name="cont_desc_screen_avs_web_view">Screen for AVS web view</string>
+    <string name="cont_desc_button_avs_sign_in">Sign in with Amazon</string>
+
+    <!-- Voice Control - AVS settings -->
+    <string name="cont_desc_screen_avs_settings">Screen for AVS settings</string>
+    <string name="cont_desc_avs_setting_service_on_off">Amazon Alexa service</string>
+    <string name="cont_desc_avs_setting_hot_word">Hot word detection</string>
+    <string name="cont_desc_avs_setting_country">Country</string>
+    <string name="cont_desc_avs_setting_sign_out">Sign out</string>
+
+    <!-- Bluetooth Settings -->
+    <string name="cont_desc_screen_bluetooth">Screen Bluetooth settings</string>
+    <string name="cont_desc_settings_item_bluetooth_service">Turn on and off Bluetooth</string>
+    <string name="cont_desc_settings_item_bluetooth_discoverability">Make device discoverable</string>
+    <string name="cont_desc_settings_item_pair_bluetooth_device">Pair a Bluetooth device</string>
+    <string name="cont_desc_bluetooth_option_connect">Option connect with device</string>
+    <string name="cont_desc_bluetooth_option_disconnect">Option disconnect from device</string>
+    <string name="cont_desc_bluetooth_option_unpair">Option unpair the device</string>
+    <string name="cont_desc_settings_item_bluetooth_device">Bluetooth device %s</string> <!-- Bluetooth device {device_name or bluetooth_address} -->
+
+    <!-- Bluetooth on boarding -->
+    <string name="cont_desc_screen_bluetooth_on_boarding">Screen to scan for Bluetooth devices</string>
+    <string name="cont_desc_bluetooth_add_refresh_controller">Refresh controller for scanning devices</string>
+    <string name="cont_desc_bluetooth_add_scanned_device">Bluetooth device %s</string> <!-- Bluetooth device {device_name or bluetooth_address} -->
+
+    <!-- ZigBee settings -->
+    <string name="cont_desc_screen_zigbee">Screen for ZigBee settings</string>
+    <string name="cont_desc_settings_item_zigbee_service">Turn on and off Zig Bee</string>
+    <string name="cont_desc_settings_item_zigbee_coordinator">Coordinator status of the device</string>
+    <string name="cont_desc_settings_item_zigbee_devices_list">List of paired ZigBee devices</string>
+    <string name="cont_desc_settings_item_zigbee_add_device">Add a ZigBee device</string>
+    <string name="cont_desc_zigbee_check">State display for coordinator status</string>
+    <string name="cont_desc_zigbee_device">ZigBee device %s</string>
+
+    <!-- Group -->
+    <string name="cont_desc_screen_group">Group setup screen</string>
+    <string name="cont_desc_screen_group_edit_name">Edit group name screen</string>
+    <string name="cont_desc_group_setup_name">Set group name</string>
+    <string name="cont_desc_group_delete">Delete the group</string>
+    <string name="cont_desc_group_device">Device %s is %s.</string> <!-- Device {device_name} is {selection_status} -->
+    <string name="cont_desc_group_remove_device">Remove device %s from the group.</string> <!-- Remove device {device_name} from the group. -->
+    <string name="cont_desc_group_add_device">Add device %s to the group.</string> <!-- Add device {device_name} to the group. -->
+    <string name="cont_desc_group_custom_name">Set a custom name for the group.</string>
+    <string name="cont_desc_group_default_name">Reset the group name to its default value.</string>
+    <string name="cont_desc_group_voice_name">Name the group with %s.</string> <!-- Name the group with {group_name}. -->
+    <string name="cont_desc_group_name_dialog">Dialog set a group name</string>
+    <string name="cont_desc_group_name_dialog_edit_text">Edit text for setting a custom group name</string>
+    <string name="cont_desc_group_name_dialog_action_ok">Dialog action OK</string>
+    <string name="cont_desc_group_name_dialog_action_cancel">Dialog action CANCEL</string>
+
+</resources>

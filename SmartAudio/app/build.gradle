@@ -1,0 +1,106 @@
+/*
+ * *************************************************************************************************
+ * * Copyright 2018 Qualcomm Technologies International, Ltd.                                      *
+ * * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.              *
+ * *************************************************************************************************
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.qualcomm.qti.smartaudio"
+        minSdkVersion 25
+        targetSdkVersion 28
+        versionCode 36
+        versionName '1.2.36'
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            buildTypes.each {
+                it.buildConfigField 'String', 'iotivityVerion', IOTIVITY_VERSION
+                it.buildConfigField 'int', 'Revision', PROJECT_REVISION
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/beans.xml'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+          checkReleaseBuilds false
+          abortOnError true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven {
+        url 'http://4thline.org/m2'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':IoTivity')
+    implementation project(':IoTControllerSDK')
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation "com.android.support:support-annotations:28.0.0"
+
+    implementation('com.squareup.picasso:picasso:2.71828') {
+        exclude group: "com.android.support"
+    }
+    implementation('com.sothree.slidinguppanel:library:3.4.0') {
+        exclude group: "com.android.support"
+    }
+    implementation('org.nanohttpd:nanohttpd:2.3.1') {
+        exclude group: "com.android.support"
+    }
+
+    implementation('asia.ivity.android:drag-sort-listview:1.0') {
+        exclude group: "com.android.support"
+    }
+    implementation('org.fourthline.cling:cling-core:2.1.1') {
+        exclude group: "com.android.support"
+    }
+
+    implementation('org.fourthline.cling:cling-support:2.1.1') {
+        exclude group: "com.android.support"
+    }
+
+    implementation 'org.eclipse.jetty:jetty-server:8.1.21.v20160908'
+    implementation 'org.eclipse.jetty:jetty-servlet:8.1.21.v20160908'
+    implementation 'org.eclipse.jetty:jetty-client:8.1.21.v20160908'
+    implementation 'org.jetbrains:annotations:15.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+}

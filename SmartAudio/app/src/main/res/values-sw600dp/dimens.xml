@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<resources>
+	<!-- Term of Services dimensions. -->
+	<dimen name="tos_text_to_button_spacing">18dp</dimen>
+	<dimen name="tos_bottom_button_margin">75dp</dimen>
+
+	<!-- Landscape weight -->
+	<item name="left_pane_weight" format="float" type="dimen">0.4</item>
+	<item name="right_pane_weight" format="float" type="dimen">0.6</item>
+
+	<!-- Now Playing -->
+	<item name="now_playing_bottom_view_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_bottom_control_layout_weight" format="float" type="dimen">0.07</item>
+	<item name="now_playing_bottom_control_view_weight" format="float" type="dimen">0.44</item>
+	<item name="now_playing_repeat_weight" format="float" type="dimen">0.04</item>
+	<item name="now_playing_bottom_control_between_view_weight" format="float" type="dimen">0.04</item>
+	<item name="now_playing_shuffle_weight" format="float" type="dimen">0.04</item>
+
+	<item name="now_playing_between_bottom_and_volume_control_view_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_volume_control_layout_weight" format="float" type="dimen">0.08</item>
+	<item name="now_playing_volume_control_left_view_weight" format="float" type="dimen">0.15</item>
+	<item name="now_playing_volume_control_view_weight" format="float" type="dimen">0.71</item>
+	<item name="now_playing_volume_control_right_view_weight" format="float" type="dimen">0.14</item>
+
+	<item name="now_playing_between_top_and_volume_control_view_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_top_control_layout_weight" format="float" type="dimen">0.07</item>
+	<item name="now_playing_top_control_left_view_weight" format="float" type="dimen">0.135</item>
+	<item name="now_playing_top_control_right_view_weight" format="float" type="dimen">0.135</item>
+	<item name="now_playing_top_control_button_weight" format="float" type="dimen">0.045</item>
+	<item name="now_playing_top_control_side_control_view_weight" format="float" type="dimen">0.215</item>
+	<item name="now_playing_top_control_play_view_weight" format="float" type="dimen">0.04</item>
+
+	<item name="now_playing_between_text_and_top_control_view_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_track_weight" format="float" type="dimen">0.045</item>
+	<item name="now_playing_artist_weight" format="float" type="dimen">0.045</item>
+	<item name="now_playing_album_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_between_album_and_track_view_weight" format="float" type="dimen">0.035</item>
+
+	<item name="now_playing_album_art_layout_weight" format="float" type="dimen">0.445</item>
+
+	<item name="now_playing_top_view_weight" format="float" type="dimen">0.035</item>
+
+</resources>

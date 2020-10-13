@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_01" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_02" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_03" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_04" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_05" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_06" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_07" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_08" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_09" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_10" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_11" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_12" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_13" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_14" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_15" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_16" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_17" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_18" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_19" android:duration="41" />
+	<item android:drawable="@drawable/progress_indeterminate_frame_small_20" android:duration="41" />
+</animation-list>

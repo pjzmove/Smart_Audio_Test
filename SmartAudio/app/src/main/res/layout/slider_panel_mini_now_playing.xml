@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/slider_panel_mini_now_playing_layout"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/slider_panel_height"
+	android:background="@color/slider_panel_mini_now_playing_background">
+
+	<ImageView
+		android:id="@+id/slider_panel_mini_now_playing_album_art"
+		android:layout_width="@dimen/slider_panel_mini_now_playing_album_art_size"
+		android:layout_height="@dimen/slider_panel_mini_now_playing_album_art_size"
+		android:layout_marginLeft="@dimen/slider_panel_mini_now_playing_album_art_left_margin"
+		android:layout_marginBottom="@dimen/slider_panel_mini_now_playing_album_art_bottom_margin"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		android:src="@drawable/ic_album_art_default_small"/>
+
+	<com.qualcomm.qti.smartaudio.view.PlayPauseButton
+		android:id="@+id/slider_panel_mini_play_pause_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/slider_panel_mini_now_playing_play_pause_padding"
+		android:background="@android:color/transparent"
+		android:layout_alignRight="@+id/slider_panel_mini_now_playing_album_art"
+		android:layout_alignBottom="@+id/slider_panel_mini_now_playing_album_art"/>
+
+	<com.qualcomm.qti.smartaudio.view.TrackSeekBar
+		android:id="@+id/slider_panel_mini_seekbar"
+		android:layout_width="@dimen/slider_panel_mini_now_playing_album_art_size"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/slider_panel_mini_now_playing_album_art"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="@dimen/slider_panel_mini_now_playing_seek_bar_bottom_margin"
+		android:progressDrawable="@drawable/seekbar_mini_player"
+		android:padding="0dp"
+		android:paddingStart="0dp"
+		android:paddingEnd="0dp"
+		android:thumb="@null"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="@dimen/slider_panel_mini_now_playing_spacing"
+		android:layout_toRightOf="@+id/slider_panel_mini_seekbar"
+		android:layout_alignBottom="@+id/slider_panel_mini_seekbar"
+		android:layout_marginTop="@dimen/slider_panel_mini_now_playing_text_margin"
+		android:orientation="vertical">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/MiniPlayerNowPlayingTextView"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/slider_panel_mini_now_playing_text_spacing">
+
+			<com.qualcomm.qti.smartaudio.view.PlayingAnimationView
+				android:id="@+id/slider_panel_mini_playing_animation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="@dimen/slider_panel_mini_now_playing_animation_right_margin"
+				android:layout_alignParentRight="true"/>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:orientation="vertical"
+				android:layout_marginRight="@dimen/slider_panel_mini_now_playing_track_right_margin"
+				android:layout_toLeftOf="@+id/slider_panel_mini_playing_animation">
+
+				<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+					android:id="@+id/slider_panel_mini_track_text"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/slider_panel_mini_now_playing_track_height"
+					style="@style/MiniPlayerNowPlayingTrackTextView"/>
+				<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+					android:id="@+id/slider_panel_mini_artist_text"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/slider_panel_mini_now_playing_artist_height"
+					android:layout_marginTop="@dimen/slider_panel_mini_now_playing_text_spacing"
+					style="@style/MiniPlayerNowPlayingArtistTextView"/>
+			</LinearLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

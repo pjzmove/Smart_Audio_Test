@@ -1,0 +1,33 @@
+<!--
+   ~ ************************************************************************************************
+   ~ * Copyright 2019 Qualcomm Technologies International, Ltd.                                     *
+   ~ ************************************************************************************************
+   -->
+
+ <LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="?attr/actionBarSize"
+   android:background="@color/app_bar_background"
+   android:gravity="center_vertical"
+   android:orientation="horizontal">
+
+   <ImageButton
+     android:id="@+id/bluetooth_app_bar_back_button"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:padding="@dimen/app_bar_view_spacing"
+     android:background="@color/app_bar_background"
+     android:contentDescription="@string/empty_content_description"
+     android:src="@drawable/btn_close"/>
+
+   <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+     android:id="@+id/bluetooth_app_bar_title"
+     style="@style/AppBarTextView"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:padding="@dimen/app_bar_view_spacing"
+     android:text="@string/bluetooth_add_device"/>
+
+ </LinearLayout>

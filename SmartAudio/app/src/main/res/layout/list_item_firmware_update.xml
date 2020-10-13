@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/setup_wifi_child_relative_layout"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/device_settings_activity_list_item_settings_sub_child_height"
+	android:background="@color/device_settings_activity_list_item_settings_child_background">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:id="@+id/text_views"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="@dimen/device_settings_activity_list_item_settings_child_left_padding"
+		android:layout_marginRight="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+		android:layout_toLeftOf="@+id/firmware_update_child_image_view">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/firmware_update_child_text_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/SettingsActivityChildsTextView"
+			android:layout_marginTop="@dimen/device_settings_activity_list_item_settings_child_text_top_padding"/>
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/firmware_update_child_sub_text_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/DeviceSettingsActivityChildsSubTextView"
+			android:layout_marginTop="@dimen/device_settings_activity_list_item_settings_child_sub_text_top_padding"
+			android:text="@string/firmware_update_updated_sub_text"/>
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/firmware_update_child_image_view"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:src="@drawable/ic_update_available"
+		android:layout_marginRight="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+		android:layout_alignParentRight="true"
+		android:visibility="gone"
+		tools:visibility="visible"/>
+
+	<ProgressBar
+		android:id="@+id/firmware_update_progress_bar"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginEnd="5dp"
+		android:layout_marginRight="@dimen/device_settings_activity_list_item_settings_child_right_padding"
+		android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"
+		android:visibility="gone"
+		tools:visibility="visible"/>
+
+</RelativeLayout>
+

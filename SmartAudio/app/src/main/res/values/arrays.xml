@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+    <string-array name="predefined_speaker_names_array">
+        <item>@string/predefined_speaker_name_living_room</item>
+        <item>@string/predefined_speaker_name_bedroom</item>
+        <item>@string/predefined_speaker_name_kitchen</item>
+        <item>@string/predefined_speaker_name_office</item>
+        <item>@string/predefined_speaker_name_patio</item>
+        <item>@string/predefined_speaker_name_den</item>
+        <item>@string/predefined_speaker_name_custom_name</item>
+    </string-array>
+
+    <string-array name="about_items_array">
+        <item>@string/legal_notices</item>
+        <item>@string/terms_of_service</item>
+    </string-array>
+
+    <string-array name="music_services_array">
+        <item>@string/spotify</item>
+    </string-array>
+
+    <string-array name="music_service_icons_array">
+        <item>icon_spotify</item>
+    </string-array>
+
+    <string-array name="music_service_packages_array">
+        <item>com.spotify.music</item>
+    </string-array>
+
+</resources>

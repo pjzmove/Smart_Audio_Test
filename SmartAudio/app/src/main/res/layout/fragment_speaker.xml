@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_main_background"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/speaker_app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <include layout="@layout/app_bar_main_view"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/manual_scan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ExpandableListView
+            android:id="@+id/speaker_fragment_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/speaker_fragment_list_background"
+            android:dividerHeight="@dimen/speaker_fragment_list_view_divider_height"
+            android:groupIndicator="@null"
+            android:paddingBottom="@dimen/speaker_fragment_list_view_padding"
+            android:paddingLeft="@dimen/speaker_fragment_list_view_padding"
+            android:paddingRight="@dimen/speaker_fragment_list_view_padding"
+            android:paddingTop="@dimen/speaker_fragment_list_view_padding"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/manual_scan_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/empty_view"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/speaker_fragment_pause_all_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/speaker_fragment_bottom_bar_height"
+        android:background="@drawable/btn_bottombar"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/speaker_fragment_bottom_bar_drawable_padding"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pause_bottombar"/>
+
+        <com.qualcomm.qti.smartaudio.view.CustomFontTextView
+            style="@style/SpeakerFragmentBottomBarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/pause_all"/>
+
+    </LinearLayout>
+
+</LinearLayout>

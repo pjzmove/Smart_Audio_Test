@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/group_speaker_layout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+  <include layout="@layout/list_item_speaker"/>
+
+	<LinearLayout
+		android:id="@+id/expandable_group_speaker_layout"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:visibility="gone"
+		android:background="@drawable/bgd_expandable_group_speaker_list" >
+
+		<ListView
+			android:id="@+id/group_speaker_listview"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:scrollbars="vertical"
+			android:scrollingCache="true"
+			android:smoothScrollbar="true" />
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontButton
+			android:id="@+id/group_speaker_button"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/speaker_group_button_height"
+			android:text="@string/ok"
+			style="@style/SpeakerGroupOkButton"/>
+	</LinearLayout>
+</LinearLayout>

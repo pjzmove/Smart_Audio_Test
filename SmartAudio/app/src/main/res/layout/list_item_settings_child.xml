@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/settings_activity_list_item_settings_child_height"
+	android:background="@color/settings_activity_list_item_settings_child_background">
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/settings_child_text_view"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		style="@style/SettingsActivityChildsTextView"
+		android:layout_alignParentLeft="true"
+		android:layout_toLeftOf="@+id/settings_child_linear_layout"
+		android:layout_marginLeft="@dimen/settings_activity_list_item_settings_child_left_padding"
+		android:layout_marginRight="@dimen/settings_activity_list_item_settings_child_right_padding"
+		android:gravity="center_vertical"/>
+
+	<LinearLayout
+		android:id="@+id/settings_child_linear_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="@dimen/settings_activity_list_item_settings_child_right_padding">
+		<ImageView
+			android:id="@+id/settings_child_image_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/ic_update_available"
+			android:visibility="gone"/>
+
+		<Switch
+			android:id="@+id/settings_child_switch_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:visibility="gone"/>
+	</LinearLayout>
+</RelativeLayout>

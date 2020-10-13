@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/menu_disconnect"
+    android:contentDescription="@string/cont_desc_bluetooth_option_disconnect"
+    android:title="@string/bluetooth_paired_device_menu_disconnect" />
+
+  <item
+    android:id="@+id/menu_unpair"
+    android:contentDescription="@string/cont_desc_bluetooth_option_unpair"
+    android:title="@string/bluetooth_paired_device_menu_unpair" />
+
+</menu>

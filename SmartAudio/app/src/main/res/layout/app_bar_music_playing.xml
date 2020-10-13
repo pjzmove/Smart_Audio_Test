@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/app_bar_now_playing_layout"
+	android:layout_width="match_parent"
+	android:layout_height="?attr/actionBarSize"
+	android:background="@color/app_bar_background">
+
+	<ImageButton
+		android:id="@+id/app_bar_playing_down_button"
+		android:layout_width="@dimen/app_bar_icon_size"
+		android:layout_height="@dimen/app_bar_icon_size"
+		android:src="@drawable/btn_down"
+		android:background="@color/app_bar_background"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/app_bar_icon_spacing"
+		android:layout_alignParentLeft="true"
+		android:scaleType="center"/>
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/app_bar_playing_text"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		style="@style/AppBarTextView"
+		android:gravity="center"
+		android:layout_centerInParent="true"/>
+
+	<ImageButton
+		android:id="@+id/app_bar_playing_queue_button"
+		android:layout_width="@dimen/app_bar_icon_size"
+		android:layout_height="@dimen/app_bar_icon_size"
+		android:layout_marginRight="@dimen/app_bar_icon_spacing"
+		android:src="@drawable/btn_queue"
+		android:background="@color/app_bar_background"
+		android:layout_centerVertical="true"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:visibility="visible"
+		android:contentDescription="@string/cont_desc_menu_queue"/>
+
+	<ImageButton
+		android:id="@+id/app_bar_playing_now_playing_button"
+		android:layout_width="@dimen/app_bar_icon_size"
+		android:layout_height="@dimen/app_bar_icon_size"
+		android:layout_marginRight="@dimen/app_bar_icon_spacing"
+		android:layout_centerVertical="true"
+		android:src="@drawable/btn_now_playing"
+		android:background="@color/app_bar_background"
+		android:scaleType="center"
+		android:layout_alignParentRight="true"
+		android:visibility="gone"
+		android:contentDescription="@string/cont_desc_menu_playing"/>
+
+</RelativeLayout>

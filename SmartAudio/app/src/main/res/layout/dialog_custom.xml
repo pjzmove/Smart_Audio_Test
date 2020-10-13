@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/custom_dialog_title_text"
+		android:gravity="center"
+		style="@style/CustomDialogTitleTextView"
+		android:layout_marginLeft="@dimen/horizontal_margin"
+		android:layout_marginRight="@dimen/horizontal_margin"
+		android:layout_marginTop="@dimen/vertical_margin"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true" />
+
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/vertical_margin"
+		android:layout_marginLeft="@dimen/horizontal_margin"
+		android:layout_marginRight="@dimen/horizontal_margin"
+		android:id="@+id/custom_dialog_message_text"
+		style="@style/CustomDialogMessageTextView"
+		android:layout_below="@+id/custom_dialog_title_text"
+		android:layout_centerHorizontal="true" />
+
+	<FrameLayout
+		android:id="@+id/custom_dialog_frame"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/custom_dialog_message_text"
+		android:layout_centerHorizontal="true" />
+
+	<RelativeLayout
+		android:id="@+id/custom_dialog_button_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/custom_dialog_frame"
+		android:layout_marginTop="@dimen/vertical_margin"
+		android:background="@color/custom_dialog_background">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontButton
+			android:id="@+id/custom_dialog_positive_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			style="@style/CustomDialogButton"
+			tools:text="Connect"/>
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontButton
+			android:id="@+id/custom_dialog_negative_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_toLeftOf="@+id/custom_dialog_positive_button"
+			style="@style/CustomDialogButton"/>
+	</RelativeLayout>
+
+</RelativeLayout>

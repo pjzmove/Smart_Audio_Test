@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/list_item_player_volume_title_height">
+
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left|center"
+			android:layout_alignParentLeft="true"
+			android:text="@string/zone_volume_title"
+			android:layout_toLeftOf="@+id/zone_volume_close_button"
+			android:layout_marginLeft="@dimen/list_item_player_volume_horizonal_margin"
+			android:layout_marginRight="@dimen/list_item_player_volume_horizonal_margin"
+			android:layout_marginTop="@dimen/list_item_player_volume_vertical_margin"
+			android:layout_marginBottom="@dimen/list_item_player_volume_title_text_bottom_margin"
+			style="@style/CustomDialogTitleTextView"/>
+
+		<ImageButton
+			android:id="@+id/zone_volume_close_button"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/btn_close_actionbar"
+			android:background="@android:color/transparent"
+			android:scaleType="center"
+			android:layout_marginRight="@dimen/list_item_player_volume_close_right_margin"
+			android:layout_marginTop="@dimen/list_item_player_volume_close_top_margin"
+			android:layout_marginBottom="@dimen/list_item_player_volume_close_bottom_margin"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/zone_volume_list_view"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginBottom="@dimen/list_item_player_volume_vertical_margin"
+		android:divider="@null"/>
+
+	<include layout="@layout/list_item_player_volume"/>
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/speaker_group_text_height">
+	<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+		android:id="@+id/group_speaker_play_text"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="@dimen/speaker_group_play_text_side_margin"
+		android:layout_marginRight="@dimen/speaker_group_play_text_side_margin"
+		android:gravity="left|center"
+		style="@style/SpeakerGroupPlayTextView"/>
+</LinearLayout>

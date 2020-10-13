@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/channel_volume_layout"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/view_channel_volume_height"
+	android:background="@color/setup_fragment_background"
+	android:orientation="vertical">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_channel_volume_top_height" >
+		<com.qualcomm.qti.smartaudio.view.CustomFontTextView
+			android:id="@+id/channel_volume_text"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/view_channel_volume_top_volume_text_height"
+			android:gravity="center|left"
+			style="@style/ChannelVolumeText"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentBottom="true" />
+
+		<com.qualcomm.qti.smartaudio.view.VolumeSliderLockButton
+			android:id="@+id/channel_volume_lock_button"
+			android:background="@color/setup_fragment_background"
+			android:layout_width="@dimen/view_channel_volume_lock_button_width"
+			android:layout_height="@dimen/view_channel_volume_top_height"
+			android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/view_channel_volume_bottom_height"
+		android:orientation="horizontal"
+		android:gravity="center">
+		<ImageView
+			android:id="@+id/channel_volume_ic_low"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_slider_volume_low"/>
+
+		<SeekBar
+			android:id="@+id/channel_volume_seekbar"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_marginLeft="@dimen/view_channel_volume_horizonal_margin"
+			android:layout_marginRight="@dimen/view_channel_volume_horizonal_margin"
+			android:thumb="@drawable/seekbar_control_selector"
+			android:progressDrawable="@drawable/seekbar"
+			android:max="100"
+			android:progress="0"/>
+
+		<ImageView
+			android:id="@+id/channel_volume_ic_high"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_slider_volume_high"/>
+	</LinearLayout>
+</LinearLayout>

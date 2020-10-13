@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**************************************************************************************************
+  ~  * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~  **************************************************************************************************/
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/speaker_group_cell_height">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/speaker_group_text_height"
+		android:orientation="horizontal">
+
+		<CheckBox
+			android:id="@+id/speaker_group_player_name"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/speaker_group_player_side_margin"
+			android:layout_marginRight="@dimen/speaker_group_player_animation_spacing"
+			android:background="@android:color/transparent"
+			android:drawableLeft="@drawable/btn_checkmark"
+			android:button="@null"
+			android:drawablePadding="@dimen/speaker_group_checkbox_to_text_margin"
+			style="@style/SpeakerGroupPlayerText"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_toLeftOf="@+id/speaker_group_playing_animation"/>
+
+		<com.qualcomm.qti.smartaudio.view.SmallPlayingAnimationView
+			android:id="@+id/speaker_group_playing_animation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="@dimen/speaker_group_player_animation_side_margin"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:visibility="gone"/>
+	</RelativeLayout>
+
+	<View
+		android:id="@+id/speaker_group_divider"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/divider_height"
+		android:background="@color/speaker_group_list_view_divider"
+		android:layout_marginRight="@dimen/speaker_group_divider_margin_right"
+		android:layout_marginLeft="@dimen/speaker_group_divider_margin_left" />
+
+</LinearLayout>

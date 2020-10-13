@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ **************************************************************************************************
+  ~ * Copyright 2018 Qualcomm Technologies International, Ltd.                                       *
+  ~ * © 2019 Qualcomm Technologies, Inc. and/or its subsidiaries. All rights reserved.               *
+  ~ **************************************************************************************************
+  -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AvsSetupFragmentButton" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:textColor">@color/setup_fragment_button_text</item>
+        <item name="android:textSize">@dimen/setup_fragment_button_text</item>
+        <item name="android:background">@drawable/bgd_setup_button</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AvsDetailText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/avs_detail_text</item>
+        <item name="android:textSize">@dimen/avs_detail_text</item>
+    </style>
+
+    <style name="AvsIntroText" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/avs_intro_text</item>
+        <item name="android:textSize">@dimen/avs_intro_text</item>
+    </style>
+
+    <style name="AppSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#02CCCC</item>
+        <item name="android:progressTint">#1010FF</item>
+        <item name="android:colorControlActivated">#00166e</item>
+    </style>
+
+    <!-- TOS styles -->
+    <style name="TOSInstructionTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/tos_text_size</item>
+        <item name="android:textColor">@color/tos_instruction_text</item>
+    </style>
+
+    <style name="TOSViewTermsButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/btn_bg_light_gray</item>
+        <item name="android:textSize">@dimen/tos_button_text_size</item>
+        <item name="android:textColor">@color/tos_view_terms_button_text</item>
+    </style>
+
+    <style name="TOSAcceptButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/btn_bg_blue</item>
+        <item name="android:textSize">@dimen/tos_button_text_size</item>
+        <item name="android:textColor">@color/tos_accept_button_text</item>
+    </style>
+
+    <!-- Custom Dialog styles -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bgd</item>
+    </style>
+
+    <style name="CustomDialogTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/custom_dialog_title</item>
+        <item name="android:textSize">@dimen/custom_dialog_title_text_size</item>
+    </style>
+
+    <style name="CustomDialogMessageTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/custom_dialog_message</item>
+        <item name="android:textSize">@dimen/custom_dialog_message_text_size</item>
+    </style>
+
+    <style name="CustomDialogButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/custom_dialog_button</item>
+        <item name="android:textSize">@dimen/custom_dialog_button_text_size</item>
+        <item name="android:background">@color/custom_dialog_background</item>
+    </style>
+
+    <!-- Nav Header style -->
+    <style name="NavHeaderTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/nav_header_text</item>
+        <item name="android:textSize">@dimen/nav_header_text_size</item>
+    </style>
+
+    <style name="NavMenuTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/nav_menu_title</item>
+        <item name="android:textSize">@dimen/nav_menu_title_text_size</item>
+    </style>
+
+    <style name="NavMenuDetailsTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/nav_menu_details</item>
+        <item name="android:textSize">@dimen/nav_menu_details_text_size</item>
+    </style>
+
+    <!-- Top bar -->
+    <style name="AppBarTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/app_bar_title_text</item>
+        <item name="android:textSize">@dimen/app_bar_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppBarButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="android:textSize">@dimen/app_bar_text_button_size</item>
+        <item name="android:textColor">@color/app_bar_button_text</item>
+    </style>
+
+    <style name="AppBarCancelButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@color/app_bar_background</item>
+        <item name="android:textSize">@dimen/app_bar_text_button_size</item>
+        <item name="android:textColor">@color/app_bar_cancel_button_text</item>
+    </style>
+
+    <!-- Manage Zones -->
+    <style name="ManageZoneTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/manage_zones_title</item>
+        <item name="android:textSize">@dimen/manage_zones_item_title_size</item>
+    </style>
+
+    <style name="ManageZoneSetupTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/manage_zones_text</item>
+        <item name="android:textSize">@dimen/manage_zones_item_text_size</item>
+    </style>
+
+    <style name="ManageZoneItemTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/manage_zones_text</item>
+        <item name="android:textSize">@dimen/manage_zones_item_text_size</item>
+    </style>
+
+    <style name="ManageZoneItemDetailTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/manage_zones_detail</item>
+        <item name="android:textSize">@dimen/manage_zones_item_detail_text_size</item>
+    </style>
+
+    <!-- Speaker Fragment -->
+    <style name="SpeakerFragmentBottomBarButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/speaker_fragment_bottom_bar_text_size</item>
+        <item name="android:textColor">@color/speaker_fragment_bottom_bar_button_text</item>
+    </style>
+
+    <style name="SpeakerFragmentSectionTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/speaker_fragment_list_section</item>
+        <item name="android:textSize">@dimen/speaker_fragment_list_item_speaker_section_text_size
+        </item>
+    </style>
+
+    <style name="SpeakerFragmentSpeakerTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/speaker_fragment_list_item_speaker_text</item>
+        <item name="android:textSize">@dimen/speaker_fragment_list_item_speaker_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SpeakerFragmentSpeakerAdditionTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/speaker_fragment_list_item_speaker_addition_text
+        </item>
+        <item name="android:textSize">@dimen/speaker_fragment_list_item_speaker_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SpeakerFragmentTrackTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">
+            @color/speaker_fragment_list_item_speaker_now_playing_track_text
+        </item>
+        <item name="android:textSize">
+            @dimen/speaker_fragment_list_item_speaker_now_playing_track_text_size
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SpeakerFragmentAlbumTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">
+            @color/speaker_fragment_list_item_speaker_now_playing_album_text
+        </item>
+        <item name="android:textSize">
+            @dimen/speaker_fragment_list_item_speaker_now_playing_album_text_size
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SpeakerFragmentArtistTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">
+            @color/speaker_fragment_list_item_speaker_now_playing_artist_text
+        </item>
+        <item name="android:textSize">
+            @dimen/speaker_fragment_list_item_speaker_now_playing_artist_text_size
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Grouping -->
+    <style name="SpeakerGroupPlayTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/speaker_group_play_text</item>
+        <item name="android:textSize">@dimen/speaker_group_play_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SpeakerGroupOkButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/btn_confirm_bg</item>
+        <item name="android:textSize">@dimen/speaker_group_button_text_size</item>
+        <item name="android:textColor">@color/speaker_group_button_text</item>
+    </style>
+
+    <style name="SpeakerGroupPlayerText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@drawable/btn_confirm_bg</item>
+        <item name="android:textSize">@dimen/speaker_group_player_text_size</item>
+        <item name="android:textColor">@color/speaker_group_player_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Browse Music -->
+    <style name="BrowseMainTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/list_item_browse_main_text</item>
+        <item name="android:textSize">@dimen/list_item_browse_main_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ActionBarTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/view_action_bar_text</item>
+        <item name="android:textSize">@dimen/view_action_bar_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ActionBarEditNameButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@color/view_action_bar_background</item>
+        <item name="android:textSize">@dimen/view_action_bar_text_size</item>
+        <item name="android:textColor">@color/view_action_bar_button_text</item>
+        <item name="android:text">@string/edit_playlist_name</item>
+    </style>
+
+    <style name="BrowseLoadingTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/browse_loading_text</item>
+        <item name="android:textSize">@dimen/browse_loading_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BrowseMediaTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/browse_media_title_text</item>
+        <item name="android:textSize">@dimen/browse_media_title_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BrowseMediaSubtitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/browse_media_subtitle_text</item>
+        <item name="android:textSize">@dimen/browse_media_subtitle_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BrowseMoreOptionTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/browse_more_option_text</item>
+        <item name="android:textSize">@dimen/browse_more_option_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BrowseSectionTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/list_item_browse_section_text</item>
+        <item name="android:textSize">@dimen/list_item_browse_section_text_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BrowseOtherTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/browse_media_title_text</item>
+        <item name="android:textSize">@dimen/browse_media_title_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Settings Activity -->
+    <style name="SettingsActivityHeadersTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/settings_activity_list_item_settings_header_text
+        </item>
+        <item name="android:textSize">@dimen/settings_activity_list_item_settings_header_text_size
+        </item>
+    </style>
+
+    <style name="SettingsActivityChildsTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/settings_activity_list_item_settings_child_text</item>
+        <item name="android:textSize">@dimen/settings_activity_list_item_settings_child_text_size
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DeviceSettingsActivityChildsSubTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">
+            @color/device_settings_activity_list_item_settings_child_sub_text
+        </item>
+        <item name="android:textSize">
+            @dimen/device_settings_activity_list_item_settings_child_sub_text_size
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Mini Player -->
+    <style name="MiniPlayerNowPlayingTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/slider_panel_mini_now_playing_text</item>
+        <item name="android:textSize">@dimen/slider_panel_mini_now_playing_text_size</item>
+        <item name="android:text">@string/now_playing</item>
+    </style>
+
+    <style name="MiniPlayerNowPlayingTrackTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/slider_panel_mini_now_playing_track_text</item>
+        <item name="android:textSize">@dimen/slider_panel_mini_now_playing_track_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="MiniPlayerNowPlayingArtistTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/slider_panel_mini_now_playing_artist_text</item>
+        <item name="android:textSize">@dimen/slider_panel_mini_now_playing_artist_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--Empty View -->
+    <style name="EmptyViewTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/empty_view_text</item>
+        <item name="android:textSize">@dimen/empty_view_text_size</item>
+    </style>
+
+    <style name="EmptyViewDetailTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/empty_view_detail_text</item>
+        <item name="android:textSize">@dimen/empty_view_detail_text_size</item>
+    </style>
+
+    <!-- Now Playing -->
+    <style name="NowPlayingTrackTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/now_playing_track_text</item>
+        <item name="android:textSize">@dimen/now_playing_track_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NowPlayingArtistTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/now_playing_artist_text</item>
+        <item name="android:textSize">@dimen/now_playing_artist_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="NowPlayingAlbumTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/now_playing_album_text</item>
+        <item name="android:textSize">@dimen/now_playing_album_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Queue -->
+    <style name="QueueActionBarButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:background">@color/view_action_bar_background</item>
+        <item name="android:textSize">@dimen/view_action_bar_text_size</item>
+        <item name="android:textColor">@color/view_action_bar_button_text</item>
+    </style>
+
+    <style name="QueueActionBarInfo" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/view_action_bar_text_size</item>
+        <item name="android:textColor">@color/view_action_bar_info_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DialogEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/edit_text_size</item>
+        <item name="android:textColor">@color/edit_text</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor</item>
+        <item name="android:textColorHint">@color/edit_text_hint</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="colorAccent">@color/edit_text_underline</item>
+        <item name="colorControlNormal">@color/edit_text_underline</item>
+        <item name="colorControlActivated">@color/edit_text_underline</item>
+    </style>
+
+    <style name="SearchEditText" parent="DialogEditText">
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <!-- Volume Control -->
+    <style name="PlayerVolumeText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/list_item_player_volume_text</item>
+        <item name="android:textSize">@dimen/list_item_player_volume_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PlayerVolumePercentageText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/list_item_player_volume_percentage_text</item>
+        <item name="android:textSize">@dimen/list_item_player_volume_text_size</item>
+    </style>
+
+    <!-- Setup styles -->
+    <style name="SetupFragmentAppBarTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_fragment_app_bar_title_text</item>
+        <item name="android:textSize">@dimen/setup_fragment_app_bar_text_size</item>
+        <item name="android:background">@color/setup_fragment_app_bar_background</item>
+    </style>
+
+    <style name="SetupFragmentAppBarSubTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_fragment_app_bar_title_text</item>
+        <item name="android:textSize">@dimen/setup_fragment_app_bar_text_size</item>
+        <item name="android:background">@color/setup_fragment_app_bar_background</item>
+    </style>
+
+    <style name="SetupFragmentButton" parent="@android:style/Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_fragment_button_text</item>
+        <item name="android:background">@color/setup_fragment_button_background</item>
+        <item name="android:textSize">@dimen/setup_fragment_button_text_size</item>
+    </style>
+
+    <style name="SetupInstructionFragmentInstructionText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_instruction_fragment_instruction_text</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textSize">@dimen/setup_instruction_fragment_instruction_text_size</item>
+    </style>
+
+    <style name="SetupListFragmentEmptyText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_list_fragment_empty_text</item>
+        <item name="android:background">@color/setup_list_fragment_background</item>
+        <item name="android:textSize">@dimen/setup_list_fragment_empty_text_size</item>
+    </style>
+
+    <style name="SetupListFragmentGroupText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/setup_list_fragment_group_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/setup_list_fragment_group_text_size</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SetupListFragmentItemText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_list_fragment_item_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/setup_list_fragment_item_text_size</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SetupWifiItemText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_list_fragment_item_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/setup_list_fragment_item_text_size</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SetupAddedFragmentGreatText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_added_fragment_great_text</item>
+        <item name="android:textSize">@dimen/setup_added_fragment_great_text_size</item>
+    </style>
+
+    <style name="SetupAddedFragmentRegularAddedText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_added_fragment_regular_added_text</item>
+        <item name="android:textSize">@dimen/setup_added_fragment_regular_added_text_size</item>
+    </style>
+
+    <style name="SetupAddedFragmentSpecialAddedText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_added_fragment_special_added_text</item>
+        <item name="android:textSize">@dimen/setup_added_fragment_special_added_text_size</item>
+    </style>
+
+    <style name="ListFooterText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/list_footer_text</item>
+        <item name="android:textSize">@dimen/list_footer_text_size</item>
+    </style>
+
+    <style name="DialogShowPasswordCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_added_fragment_regular_added_text</item>
+        <item name="android:textSize">@dimen/setup_added_fragment_regular_added_text_size</item>
+    </style>
+
+    <style name="AddWifiHeaderText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/addwifi_header_text</item>
+        <item name="android:textSize">@dimen/addwifi_header_text_size</item>
+    </style>
+
+    <style name="AddWifiSpinnerText" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/addwifi_spinner_text</item>
+        <item name="android:textSize">@dimen/addwifi_spinner_text_size</item>
+    </style>
+
+    <style name="SetupAdjustAudioMoreInfoText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/setup_adjust_audio_more_info_fragment_text</item>
+        <item name="android:textSize">@dimen/setup_adjust_audio_more_info_fragment_text_size</item>
+    </style>
+
+    <style name="AdjustAudioFragmentTestText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/setup_adjust_audio_test_text</item>
+        <item name="android:textSize">@dimen/setup_adjust_audio_test_text_size</item>
+    </style>
+
+    <style name="ChannelVolumeText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/view_channel_volume_text</item>
+        <item name="android:textSize">@dimen/view_channel_volume_text_size</item>
+    </style>
+
+    <style name="SetupAdjustAudioMoreInfoInstructionText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">
+            @color/setup_adjust_audio_more_info_fragment_instruction_text
+        </item>
+        <item name="android:textSize">@dimen/setup_adjust_audio_more_info_fragment_text_size</item>
+    </style>
+
+    <style name="CustomDialogSpecialMessageTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/custom_dialog_special_message</item>
+        <item name="android:textSize">@dimen/custom_dialog_special_message_text_size</item>
+    </style>
+
+    <style name="ChannelVolumePercentageText" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/view_channel_volume_percentage_text</item>
+        <item name="android:textSize">@dimen/view_channel_volume_text_size</item>
+    </style>
+
+    <style name="MusicServiceTextView" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/list_item_music_service</item>
+        <item name="android:textSize">@dimen/list_item_music_service_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>
